@@ -280,16 +280,39 @@ class RecordingController(QThread):
             output_file = video_file.with_name(f"{video_file.stem}_with_audio{video_file.suffix}")
             
             # FFmpeg command to combine audio and video
-            cmd = [
-                'ffmpeg',
-                '-i', str(video_file),  # Video input
-                '-i', str(audio_file),  # Audio input
-                '-c:v', 'copy',         # Copy video codec (no re-encoding)
-                '-c:a', 'aac',          # Encode audio to AAC
-                '-strict', 'experimental',
-                '-y',                   # Overwrite output file
-                str(output_file)
-            ]
+            # Use H.264 + yuv420p for wide compatibility on Windows players when output is MP4/MOV
+            if video_file.suffix.lower() in {'.mp4', '.mov'}:
+                cmd = [
+                    'ffmpeg',
+                    '-i', str(video_file),  # Video input
+                    '-i', str(audio_file),  # Audio input
+                    '-map', '0:v:0',        # Map video from first input
+                    '-map', '1:a:0',        # Map audio from second input
+                    '-c:v', 'libx264',      # Re-encode video to H.264
+                    '-preset', 'medium',
+                    '-crf', '23',
+                    '-vf', 'scale=trunc(iw/2)*2:trunc(ih/2)*2',  # Ensure even dimensions
+                    '-profile:v', 'high',
+                    '-level:v', '4.0',
+                    '-pix_fmt', 'yuv420p',  # Ensure compatibility
+                    '-movflags', '+faststart',
+                    '-c:a', 'aac',          # Encode audio to AAC
+                    '-b:a', '192k',
+                    '-shortest',            # Stop at the shortest stream
+                    '-y',                   # Overwrite output file
+                    str(output_file)
+                ]
+            else:
+                # Default behavior for other formats: copy video stream, encode audio
+                cmd = [
+                    'ffmpeg',
+                    '-i', str(video_file),  # Video input
+                    '-i', str(audio_file),  # Audio input
+                    '-c:v', 'copy',         # Copy video codec (no re-encoding)
+                    '-c:a', 'aac',          # Encode audio to AAC
+                    '-y',                   # Overwrite output file
+                    str(output_file)
+                ]
             
             # Run FFmpeg command
             result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
@@ -431,7 +454,6 @@ class MainWindow(QMainWindow):
         self.duration_label.setMinimumHeight(24)
         self.duration_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
         info_layout.addWidget(self.duration_label, 1, 1)
-        
         frames_text_label = QLabel("Frames:")
         frames_text_label.setMinimumHeight(24)
         frames_text_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
@@ -668,20 +690,20 @@ class MainWindow(QMainWindow):
                 border: 1px solid #dddddd;
                 border-radius: 5px;
                 margin-top: 1ex;
-                padding-top: 8px;
+                padding-top: 6px;
                 color: #222222;
                 background-color: #ffffff;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
-                left: 10px;
-                padding: 0 5px 0 5px;
+                left: 6px;
+                padding: 0 3px 0 3px;
             }
             QPushButton {
                 background-color: #4CAF50;
                 border: none;
                 color: white;
-                padding: 8px 16px;
+                padding: 6px 10px;
                 border-radius: 4px;
                 font-weight: bold;
             }
@@ -700,11 +722,11 @@ class MainWindow(QMainWindow):
                 color: #222222;
                 border: 1px solid #cccccc;
                 border-radius: 4px;
-                padding: 2px 6px;
+                padding: 2px 4px;
             }
             /* Ensure QComboBox dropdown list is readable */
             QComboBox {
-                padding-right: 24px; /* space for arrow */
+                padding-right: 18px; /* space for arrow */
             }
             QComboBox QAbstractItemView {
                 background-color: #ffffff;
@@ -716,7 +738,7 @@ class MainWindow(QMainWindow):
             QComboBox::drop-down {
                 subcontrol-origin: padding;
                 subcontrol-position: top right;
-                width: 20px;
+                width: 16px;
                 border-left: 1px solid #cccccc;
                 background: #f8f8f8;
             }
