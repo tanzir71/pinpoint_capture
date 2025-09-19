@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout,
     QPushButton, QLabel, QFrame, QGroupBox, QSlider, QSpinBox,
     QComboBox, QLineEdit, QTextEdit, QProgressBar, QFileDialog,
-    QMessageBox, QStatusBar, QSplitter, QTabWidget, QCheckBox
+    QMessageBox, QStatusBar, QSplitter, QTabWidget, QCheckBox, QSizePolicy, QLayout
 )
 from PyQt6.QtCore import (
     Qt, QTimer, pyqtSignal, QThread, pyqtSlot, QSize
@@ -21,7 +21,7 @@ from PyQt6.QtGui import (
     QPixmap, QFont, QIcon, QPalette, QColor, QAction
 )
 
-from .models import RecordingSettings, RecordingSession
+from .models import RecordingSettings, RecordingSession, ClickEvent
 from .config_manager import ConfigManager
 from .screen_capture import ScreenCapture
 from .mouse_handler import MouseEventHandler
@@ -186,7 +186,7 @@ class RecordingController(QThread):
     def _on_click_detected(self, click_event):
         """Handle detected click."""
         if self.is_recording and self.video_processor:
-            # NEW: convert global screen coords to frame-relative coords
+            # Convert global screen coords to frame-relative coords when possible
             processed_click = click_event
             try:
                 if self.screen_capture and hasattr(self.screen_capture, 'target_monitor'):
@@ -195,16 +195,17 @@ class RecordingController(QThread):
                     mon_w, mon_h = mon['width'], mon['height']
                     adj_x = max(0, min(mon_w - 1, click_event.x - mon_left))
                     adj_y = max(0, min(mon_h - 1, click_event.y - mon_top))
-                    processed_click = ClickEvent.create_now(adj_x, adj_y, click_event.button, (mon_w, mon_h))
+                    processed_click = ClickEvent.create_now(int(adj_x), int(adj_y), click_event.button, (mon_w, mon_h))
                     # Emit adjusted coords for UI
                     self.click_detected.emit(int(adj_x), int(adj_y))
                 else:
+                    # Fallback: emit as-is if monitor not known
                     self.click_detected.emit(int(click_event.x), int(click_event.y))
             except Exception:
                 self.click_detected.emit(int(click_event.x), int(click_event.y))
 
+            # Only add the processed (adjusted) click to the processor
             self.video_processor.add_click_event(processed_click)
-            self.click_detected.emit(click_event.x, click_event.y)
     
     def update_settings(self, settings: RecordingSettings):
         """Update recording settings."""
@@ -247,37 +248,36 @@ class MainWindow(QMainWindow):
     
     def setup_ui(self):
         """Set up the user interface."""
-        self.setWindowTitle("Pinpoint Capture - Screen Recorder with Smart Zoom")
-        self.setMinimumSize(800, 600)
-        self.resize(1000, 700)
+        self.setWindowTitle("Pinpoint Capture")
+        # Increase base size to avoid control overlap
+        self.setMinimumSize(520, 540)
+        self.resize(640, 580)
         
         # Central widget
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         
-        # Main layout
-        main_layout = QHBoxLayout(central_widget)
+        # Main layout (compact, single column)
+        main_layout = QVBoxLayout(central_widget)
+        main_layout.setContentsMargins(12, 12, 12, 12)
+        main_layout.setSpacing(10)
+        # Prevent child cropping by honoring minimum sizes
+        main_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
-        # Create splitter for resizable panels
-        splitter = QSplitter(Qt.Orientation.Horizontal)
-        main_layout.addWidget(splitter)
-        
-        # Left panel - Controls
-        self.setup_control_panel(splitter)
-        
-        # Right panel - Preview and logs
-        self.setup_preview_panel(splitter)
+        # Controls only (no preview/logs)
+        self.setup_control_panel(main_layout)
         
         # Status bar
         self.setup_status_bar()
         
-        # Set splitter proportions
-        splitter.setSizes([400, 600])
     
-    def setup_control_panel(self, parent):
-        """Set up the control panel."""
+    def setup_control_panel(self, parent_layout):
+        """Set up the control panel in a compact form."""
         control_widget = QWidget()
+        control_widget.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
         control_layout = QVBoxLayout(control_widget)
+        # Honor minimum sizes inside this panel
+        control_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
         # Recording controls
         self.setup_recording_controls(control_layout)
@@ -289,39 +289,70 @@ class MainWindow(QMainWindow):
         self.setup_output_settings(control_layout)
         
         control_layout.addStretch()
-        parent.addWidget(control_widget)
-    
+        parent_layout.addWidget(control_widget, 1)
+        
     def setup_recording_controls(self, layout):
         """Set up recording control buttons."""
         group = QGroupBox("Recording Controls")
         group_layout = QVBoxLayout(group)
+        group_layout.setContentsMargins(10, 10, 10, 10)
+        group_layout.setSpacing(10)
+        group.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        group_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
         # Main recording button
         self.record_button = QPushButton("Start Recording")
-        self.record_button.setMinimumHeight(50)
+        self.record_button.setMinimumHeight(56)
+        self.record_button.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         self.record_button.clicked.connect(self.toggle_recording)
         group_layout.addWidget(self.record_button)
         
+        # Visual separator to ensure clear spacing below the button
+        separator = QFrame()
+        separator.setFrameShape(QFrame.Shape.HLine)
+        separator.setFrameShadow(QFrame.Shadow.Sunken)
+        group_layout.addWidget(separator)
+        
         # Recording info
         info_layout = QGridLayout()
+        info_layout.setVerticalSpacing(6)
+        info_layout.setColumnStretch(1, 1)
         
-        info_layout.addWidget(QLabel("Status:"), 0, 0)
+        status_text_label = QLabel("Status:")
+        status_text_label.setMinimumHeight(24)
+        status_text_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        info_layout.addWidget(status_text_label, 0, 0)
         self.status_label = QLabel("Ready")
+        self.status_label.setMinimumHeight(24)
+        self.status_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
         info_layout.addWidget(self.status_label, 0, 1)
         
-        info_layout.addWidget(QLabel("Duration:"), 1, 0)
+        duration_text_label = QLabel("Duration:")
+        duration_text_label.setMinimumHeight(24)
+        duration_text_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        info_layout.addWidget(duration_text_label, 1, 0)
         self.duration_label = QLabel("00:00:00")
+        self.duration_label.setMinimumHeight(24)
+        self.duration_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
         info_layout.addWidget(self.duration_label, 1, 1)
         
-        info_layout.addWidget(QLabel("Frames:"), 2, 0)
+        frames_text_label = QLabel("Frames:")
+        frames_text_label.setMinimumHeight(24)
+        frames_text_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        info_layout.addWidget(frames_text_label, 2, 0)
         self.frames_label = QLabel("0")
+        self.frames_label.setMinimumHeight(24)
+        self.frames_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
         info_layout.addWidget(self.frames_label, 2, 1)
         
         group_layout.addLayout(info_layout)
         
-        # Progress bar
+        # Progress bar - reserve space to prevent layout shifts
         self.progress_bar = QProgressBar()
         self.progress_bar.setVisible(False)
+        self.progress_bar.setMinimumHeight(16)
+        self.progress_bar.setMaximumHeight(16)
+        # Always add the progress bar but keep it hidden to reserve space
         group_layout.addWidget(self.progress_bar)
         
         layout.addWidget(group)
@@ -330,18 +361,29 @@ class MainWindow(QMainWindow):
         """Set up settings panel."""
         group = QGroupBox("Zoom Settings")
         group_layout = QGridLayout(group)
+        group_layout.setContentsMargins(10, 10, 10, 10)
+        group_layout.setHorizontalSpacing(8)
+        group_layout.setVerticalSpacing(8)
+        group_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
+        group.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         
         # Zoom level
-        group_layout.addWidget(QLabel("Zoom Level:"), 0, 0)
+        zoom_label = QLabel("Zoom Level:")
+        zoom_label.setMinimumHeight(24)
+        zoom_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        group_layout.addWidget(zoom_label, 0, 0)
         self.zoom_slider = QSlider(Qt.Orientation.Horizontal)
         self.zoom_slider.setRange(150, 500)  # 1.5x to 5.0x
         self.zoom_slider.setValue(int(self.settings.zoom_level * 100))
         self.zoom_slider.valueChanged.connect(self.on_zoom_changed)
+        self.zoom_slider.setMinimumHeight(22)
+        self.zoom_slider.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.zoom_slider, 0, 1)
         
         self.zoom_label = QLabel(f"{self.settings.zoom_level:.1f}x")
+        self.zoom_label.setMinimumHeight(24)
+        self.zoom_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
         group_layout.addWidget(self.zoom_label, 0, 2)
-        
         # Zoom duration
         group_layout.addWidget(QLabel("Zoom Duration:"), 1, 0)
         self.duration_spin = QSpinBox()
@@ -368,31 +410,58 @@ class MainWindow(QMainWindow):
         """Set up output settings panel."""
         group = QGroupBox("Output Settings")
         group_layout = QGridLayout(group)
+        group_layout.setContentsMargins(10, 10, 10, 10)
+        group_layout.setHorizontalSpacing(8)
+        group_layout.setVerticalSpacing(8)
+        group.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        # Ensure the line edit expands and the browse button remains visible
+        group_layout.setColumnStretch(1, 1)
+        group_layout.setColumnMinimumWidth(2, 96)
+        group_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
         # Output format
-        group_layout.addWidget(QLabel("Format:"), 0, 0)
+        format_label = QLabel("Format:")
+        format_label.setMinimumHeight(24)
+        format_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        group_layout.addWidget(format_label, 0, 0)
         self.format_combo = QComboBox()
         self.format_combo.addItems(['mp4', 'avi', 'mov'])
         self.format_combo.setCurrentText(self.settings.output_format)
         self.format_combo.currentTextChanged.connect(self.on_format_changed)
+        self.format_combo.setMinimumHeight(28)
+        self.format_combo.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.format_combo, 0, 1)
         
         # FPS
-        group_layout.addWidget(QLabel("FPS:"), 1, 0)
+        fps_label = QLabel("FPS:")
+        fps_label.setMinimumHeight(24)
+        fps_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        group_layout.addWidget(fps_label, 1, 0)
         self.fps_spin = QSpinBox()
         self.fps_spin.setRange(10, 60)
         self.fps_spin.setValue(self.settings.fps)
         self.fps_spin.valueChanged.connect(self.on_fps_changed)
+        self.fps_spin.setMinimumHeight(28)
+        self.fps_spin.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.fps_spin, 1, 1)
         
         # Output directory
-        group_layout.addWidget(QLabel("Output Dir:"), 2, 0)
+        output_label = QLabel("Output Dir:")
+        output_label.setMinimumHeight(24)
+        output_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        group_layout.addWidget(output_label, 2, 0)
         self.output_path_edit = QLineEdit(self.settings.output_path)
         self.output_path_edit.textChanged.connect(self.on_output_path_changed)
+        self.output_path_edit.setMinimumHeight(28)
+        self.output_path_edit.setMinimumWidth(220)
+        self.output_path_edit.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.output_path_edit, 2, 1)
         
         browse_button = QPushButton("Browse")
         browse_button.clicked.connect(self.browse_output_directory)
+        browse_button.setMinimumHeight(32)
+        browse_button.setMinimumWidth(90)
+        browse_button.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(browse_button, 2, 2)
         
         layout.addWidget(group)
@@ -441,17 +510,25 @@ class MainWindow(QMainWindow):
     
     def setup_styles(self):
         """Set up application styles."""
-        # Set modern color scheme
+        # Set modern color scheme with readable text
         self.setStyleSheet("""
             QMainWindow {
                 background-color: #f5f5f5;
             }
+            QWidget {
+                color: #222222;
+            }
+            QLabel {
+                color: #222222;
+            }
             QGroupBox {
                 font-weight: bold;
-                border: 2px solid #cccccc;
+                border: 1px solid #dddddd;
                 border-radius: 5px;
                 margin-top: 1ex;
-                padding-top: 10px;
+                padding-top: 8px;
+                color: #222222;
+                background-color: #ffffff;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
@@ -476,9 +553,38 @@ class MainWindow(QMainWindow):
                 background-color: #cccccc;
                 color: #666666;
             }
+            QLineEdit, QComboBox, QSpinBox {
+                background-color: #ffffff;
+                color: #222222;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                padding: 2px 6px;
+            }
+            QStatusBar {
+                background-color: #eeeeee;
+                color: #222222;
+            }
+            QMessageBox {
+                background-color: #ffffff;
+                color: #222222;
+            }
+            QMessageBox QLabel {
+                color: #222222;
+            }
+            QProgressBar {
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                background-color: #f0f0f0;
+                text-align: center;
+                color: #222222;
+            }
+            QProgressBar::chunk {
+                background-color: #4CAF50;
+                border-radius: 3px;
+            }
             QSlider::groove:horizontal {
                 border: 1px solid #bbb;
-                background: white;
+                background: #ffffff;
                 height: 10px;
                 border-radius: 4px;
             }
@@ -601,7 +707,9 @@ class MainWindow(QMainWindow):
         self.record_button.setText("Stop Recording")
         self.record_button.setStyleSheet("background-color: #f44336;")
         self.status_label.setText("Recording")
+        # Keep progress bar visible to prevent layout shifts
         self.progress_bar.setVisible(True)
+        self.progress_bar.setRange(0, 0)  # Indeterminate progress
         
         self.recording_timer.start(1000)  # Update every second
         self.status_bar.showMessage("Recording in progress...")
@@ -617,18 +725,22 @@ class MainWindow(QMainWindow):
         self.record_button.setText("Start Recording")
         self.record_button.setStyleSheet("background-color: #4CAF50;")
         self.status_label.setText("Ready")
+        # Hide progress bar after recording stops
         self.progress_bar.setVisible(False)
+        self.progress_bar.setRange(0, 100)  # Reset to normal range
         self.duration_label.setText("00:00:00")
         
         if output_path:
             self.status_bar.showMessage(f"Recording saved: {output_path}")
             self.log_message(f"Recording saved to: {output_path}")
             
-            # Show completion message
-            QMessageBox.information(
-                self, "Recording Complete", 
-                f"Recording saved successfully!\n\nFile: {output_path}\nFrames: {self.frame_count}"
-            )
+            # Show completion message with proper styling
+            msg_box = QMessageBox(self)
+            msg_box.setWindowTitle("Recording Complete")
+            msg_box.setText("Recording saved successfully!")
+            msg_box.setDetailedText(f"File: {output_path}\nFrames: {self.frame_count}")
+            msg_box.setIcon(QMessageBox.Icon.Information)
+            msg_box.exec()
         else:
             self.status_bar.showMessage("Recording stopped")
             self.log_message("Recording stopped")
@@ -642,12 +754,20 @@ class MainWindow(QMainWindow):
         self.record_button.setText("Start Recording")
         self.record_button.setStyleSheet("background-color: #4CAF50;")
         self.status_label.setText("Error")
+        # Hide progress bar after error
         self.progress_bar.setVisible(False)
+        self.progress_bar.setRange(0, 100)  # Reset to normal range
         
         self.status_bar.showMessage(f"Error: {error_message}")
         self.log_message(f"ERROR: {error_message}")
         
-        QMessageBox.critical(self, "Recording Error", f"An error occurred:\n\n{error_message}")
+        # Show error message with proper styling
+        msg_box = QMessageBox(self)
+        msg_box.setWindowTitle("Recording Error")
+        msg_box.setText("An error occurred during recording:")
+        msg_box.setDetailedText(error_message)
+        msg_box.setIcon(QMessageBox.Icon.Critical)
+        msg_box.exec()
     
     @pyqtSlot(int)
     def on_frame_captured(self, frame_count):
@@ -673,15 +793,13 @@ class MainWindow(QMainWindow):
             self.duration_label.setText(time_str)
     
     def log_message(self, message):
-        """Add message to log display."""
+        """Display message in status bar (logs panel removed)."""
         timestamp = datetime.now().strftime("%H:%M:%S")
         formatted_message = f"[{timestamp}] {message}"
-        self.log_text.append(formatted_message)
-        
-        # Auto-scroll to bottom
-        cursor = self.log_text.textCursor()
-        cursor.movePosition(cursor.MoveOperation.End)
-        self.log_text.setTextCursor(cursor)
+        if hasattr(self, "status_bar") and self.status_bar is not None:
+            self.status_bar.showMessage(formatted_message)
+        # Also log to application logger
+        self.logger.info(message)
     
     def closeEvent(self, event):
         """Handle window close event."""

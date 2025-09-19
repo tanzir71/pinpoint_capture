@@ -232,19 +232,29 @@ class VideoProcessor:
         if not self.pending_clicks or self.is_zooming:
             return
         
-        # Find the most recent click within trigger window
-        trigger_window = 0.5  # 500ms window to trigger zoom
-        recent_clicks = [click for click in self.pending_clicks 
-                        if timestamp - click.timestamp <= trigger_window]
+        # Trigger on the most recent click that is not in the future relative to this frame timestamp.
+        # This is robust against processing latency and queue delays.
+        candidate = None
+        for click in sorted(self.pending_clicks, key=lambda c: c.timestamp, reverse=True):
+            if click.timestamp <= timestamp + 0.2:  # allow slight clock skew between capture and click threads
+                candidate = click
+                break
         
-        if recent_clicks:
-            # Use the most recent click
-            latest_click = max(recent_clicks, key=lambda c: c.timestamp)
-            self._start_zoom_effect(latest_click, timestamp)
-            
-            # Remove processed clicks
-            self.pending_clicks = [click for click in self.pending_clicks 
-                                 if click.timestamp > latest_click.timestamp]
+        # If nothing qualifies yet (e.g., frame timestamp still behind), do nothing and wait for newer frames
+        if candidate is None:
+            return
+        
+        # Optionally discard very old clicks (>5s older than this frame) to avoid stale triggers
+        if timestamp - candidate.timestamp > 5.0:
+            # Drop stale clicks
+            self.pending_clicks = [c for c in self.pending_clicks if (timestamp - c.timestamp) <= 5.0]
+            return
+        
+        # Start zoom now, anchored to the current frame timestamp for perfect sync
+        self._start_zoom_effect(candidate, timestamp)
+        
+        # Remove processed and older clicks so we don't retrigger on them
+        self.pending_clicks = [click for click in self.pending_clicks if click.timestamp > candidate.timestamp]
     
     def _start_zoom_effect(self, click_event: ClickEvent, current_time: float):
         """Start zoom effect centered on click location."""
@@ -255,7 +265,7 @@ class VideoProcessor:
         self.zoom_duration = self.settings.zoom_duration
         self.is_zooming = True
         
-        self.logger.debug(f"Zoom effect started at ({click_event.x}, {click_event.y}), level: {self.target_zoom_level}")
+        self.logger.info(f"Zoom effect started at ({click_event.x}, {click_event.y}), level: {self.target_zoom_level}")
     
     def _update_zoom_state(self, timestamp: float):
         """Update current zoom level based on time and settings."""

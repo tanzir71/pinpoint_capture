@@ -5,7 +5,7 @@
     ],
     "fps": 30,
     "zoom_level": 2.0,
-    "zoom_duration": 3.0,
+    "zoom_duration": 2.992,
     "transition_speed": 1,
     "output_format": "mp4",
     "output_path": "./recordings",

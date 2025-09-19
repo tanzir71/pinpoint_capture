@@ -4890,3 +4890,468 @@ TypeError: '_thread._ThreadHandle' object is not callable
 2025-09-19 15:51:09,690 - src.app_controller - INFO - Application exited with code: 0
 2025-09-19 15:51:09,690 - __main__ - INFO - Application finished with result: 0
 2025-09-19 15:51:09,690 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 15:57:18,466 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 15:57:18,466 - root - INFO - Directory created/verified: recordings
+2025-09-19 15:57:18,466 - root - INFO - Directory created/verified: config
+2025-09-19 15:57:18,467 - root - INFO - Directory created/verified: logs
+2025-09-19 15:57:18,467 - root - INFO - Directory created/verified: temp
+2025-09-19 15:57:18,507 - src.app_controller - INFO - Logging system initialized
+2025-09-19 15:57:18,508 - src.app_controller - INFO - Application controller initialized
+2025-09-19 15:57:18,508 - __main__ - INFO - Application controller initialized
+2025-09-19 15:57:18,508 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 15:57:18,511 - src.app_controller - INFO - System requirements check passed
+2025-09-19 15:57:18,512 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 15:57:18,540 - src.main_window - INFO - Main window initialized
+2025-09-19 15:57:18,541 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 15:57:18,541 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 15:57:23,294 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 15:57:23,330 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 15:57:23,331 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 15:57:23,331 - src.video_processor - INFO - Video processor initialized
+2025-09-19 15:57:23,331 - src.main_window - INFO - Recording components initialized
+2025-09-19 15:57:23,335 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_155723.mp4
+2025-09-19 15:57:23,336 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 15:57:23,337 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 15:57:23,339 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_155723
+2025-09-19 15:57:24,966 - src.video_processor - INFO - Zoom effect started at (1274, 80), level: 2.0
+2025-09-19 15:57:30,995 - src.video_processor - INFO - Zoom effect started at (1348, 178), level: 2.0
+2025-09-19 15:57:32,519 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 7 clicks
+2025-09-19 15:57:32,542 - src.screen_capture - INFO - Screen capture stopped. Captured 228 frames in 9.21s (avg 24.8 FPS)
+2025-09-19 15:57:32,625 - src.video_processor - INFO - Video processing stopped. Processed 227 frames in 9.29s (avg 24.4 FPS)
+2025-09-19 15:57:32,625 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 15:57:32,626 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 15:57:32,645 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 15:57:33,636 - src.main_window - INFO - Recording stopped
+2025-09-19 15:57:57,353 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 15:57:57,408 - src.app_controller - INFO - Application quit event received
+2025-09-19 15:57:57,409 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 15:57:57,409 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 15:57:57,411 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 15:57:57,411 - __main__ - INFO - Application finished with result: 0
+2025-09-19 15:57:57,411 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 16:53:30,865 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 16:53:30,866 - root - INFO - Directory created/verified: recordings
+2025-09-19 16:53:30,866 - root - INFO - Directory created/verified: config
+2025-09-19 16:53:30,866 - root - INFO - Directory created/verified: logs
+2025-09-19 16:53:30,866 - root - INFO - Directory created/verified: temp
+2025-09-19 16:53:30,901 - src.app_controller - INFO - Logging system initialized
+2025-09-19 16:53:30,902 - src.app_controller - INFO - Application controller initialized
+2025-09-19 16:53:30,902 - __main__ - INFO - Application controller initialized
+2025-09-19 16:53:30,902 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 16:53:30,905 - src.app_controller - INFO - System requirements check passed
+2025-09-19 16:53:30,906 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 16:53:30,923 - src.app_controller - ERROR - Failed to initialize application: name 'splitter' is not defined
+2025-09-19 16:54:54,807 - src.app_controller - INFO - Received signal 2, initiating shutdown
+2025-09-19 16:54:54,808 - __main__ - ERROR - Application initialization failed
+2025-09-19 16:54:54,808 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 16:55:31,235 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 16:55:31,236 - root - INFO - Directory created/verified: recordings
+2025-09-19 16:55:31,236 - root - INFO - Directory created/verified: config
+2025-09-19 16:55:31,236 - root - INFO - Directory created/verified: logs
+2025-09-19 16:55:31,237 - root - INFO - Directory created/verified: temp
+2025-09-19 16:55:31,271 - src.app_controller - INFO - Logging system initialized
+2025-09-19 16:55:31,272 - src.app_controller - INFO - Application controller initialized
+2025-09-19 16:55:31,272 - __main__ - INFO - Application controller initialized
+2025-09-19 16:55:31,272 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 16:55:31,275 - src.app_controller - INFO - System requirements check passed
+2025-09-19 16:55:31,276 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 16:55:31,290 - src.main_window - INFO - Main window initialized
+2025-09-19 16:55:31,290 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 16:55:31,290 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 16:58:38,611 - src.app_controller - INFO - Received signal 2, initiating shutdown
+2025-09-19 16:58:38,611 - src.app_controller - INFO - Shutdown requested
+2025-09-19 16:58:38,612 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 16:58:38,648 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 16:58:38,659 - src.app_controller - INFO - Application quit event received
+2025-09-19 16:58:38,660 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 16:58:38,660 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 16:58:38,661 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 16:58:38,661 - __main__ - INFO - Application finished with result: 0
+2025-09-19 16:58:46,377 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 16:58:46,378 - root - INFO - Directory created/verified: recordings
+2025-09-19 16:58:46,378 - root - INFO - Directory created/verified: config
+2025-09-19 16:58:46,378 - root - INFO - Directory created/verified: logs
+2025-09-19 16:58:46,379 - root - INFO - Directory created/verified: temp
+2025-09-19 16:58:46,416 - src.app_controller - INFO - Logging system initialized
+2025-09-19 16:58:46,416 - src.app_controller - INFO - Application controller initialized
+2025-09-19 16:58:46,417 - __main__ - INFO - Application controller initialized
+2025-09-19 16:58:46,417 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 16:58:46,420 - src.app_controller - INFO - System requirements check passed
+2025-09-19 16:58:46,422 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 16:58:46,435 - src.main_window - INFO - Main window initialized
+2025-09-19 16:58:46,436 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 16:58:46,436 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:01:08,372 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:01:08,372 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:01:08,373 - root - INFO - Directory created/verified: config
+2025-09-19 17:01:08,373 - root - INFO - Directory created/verified: logs
+2025-09-19 17:01:08,373 - root - INFO - Directory created/verified: temp
+2025-09-19 17:01:08,414 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:01:08,414 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:01:08,415 - __main__ - INFO - Application controller initialized
+2025-09-19 17:01:08,415 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:01:08,418 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:01:08,419 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:01:08,427 - src.app_controller - ERROR - Failed to initialize application: name 'QSizePolicy' is not defined
+2025-09-19 17:08:25,139 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:08:25,185 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:08:25,193 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:08:25,193 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:08:25,194 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:08:25,194 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:08:25,194 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:08:32,051 - src.app_controller - INFO - Received signal 2, initiating shutdown
+2025-09-19 17:08:32,051 - __main__ - ERROR - Application initialization failed
+2025-09-19 17:08:32,051 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:10:58,816 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:10:58,817 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:10:58,817 - root - INFO - Directory created/verified: config
+2025-09-19 17:10:58,817 - root - INFO - Directory created/verified: logs
+2025-09-19 17:10:58,817 - root - INFO - Directory created/verified: temp
+2025-09-19 17:10:58,854 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:10:58,855 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:10:58,855 - __main__ - INFO - Application controller initialized
+2025-09-19 17:10:58,855 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:10:58,858 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:10:58,860 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:10:58,879 - src.main_window - INFO - Main window initialized
+2025-09-19 17:10:58,880 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:10:58,880 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:11:03,102 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:11:03,149 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:11:03,149 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:11:03,150 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:11:03,150 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:11:03,154 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_171103.mp4
+2025-09-19 17:11:03,154 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:11:03,155 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:11:03,157 - src.main_window - INFO - Recording started
+2025-09-19 17:11:03,157 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_171103
+2025-09-19 17:11:05,098 - src.main_window - INFO - Click detected at (1472, 179) - Zoom triggered
+2025-09-19 17:11:05,099 - src.video_processor - INFO - Zoom effect started at (1472, 179), level: 2.0
+2025-09-19 17:11:05,926 - src.main_window - INFO - Click detected at (1796, 21) - Zoom triggered
+2025-09-19 17:11:08,726 - src.main_window - INFO - Click detected at (995, 374) - Zoom triggered
+2025-09-19 17:11:08,812 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 3 clicks
+2025-09-19 17:11:08,863 - src.screen_capture - INFO - Screen capture stopped. Captured 137 frames in 5.71s (avg 24.0 FPS)
+2025-09-19 17:11:08,907 - src.video_processor - INFO - Video processing stopped. Processed 135 frames in 5.75s (avg 23.5 FPS)
+2025-09-19 17:11:08,907 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:11:08,908 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:11:08,928 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:11:08,929 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_171103.mp4
+2025-09-19 17:11:13,454 - src.main_window - INFO - Recording stopped
+2025-09-19 17:11:48,160 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:11:48,160 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:11:48,160 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:11:48,160 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:11:48,161 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:11:48,162 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_171148.mp4
+2025-09-19 17:11:48,163 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:11:48,164 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:11:48,165 - src.main_window - INFO - Recording started
+2025-09-19 17:11:48,165 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_171148
+2025-09-19 17:11:49,662 - src.main_window - INFO - Click detected at (931, 370) - Zoom triggered
+2025-09-19 17:11:49,687 - src.video_processor - INFO - Zoom effect started at (931, 370), level: 2.0
+2025-09-19 17:11:49,735 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 1 clicks
+2025-09-19 17:11:49,762 - src.screen_capture - INFO - Screen capture stopped. Captured 42 frames in 1.60s (avg 26.3 FPS)
+2025-09-19 17:11:49,854 - src.video_processor - INFO - Video processing stopped. Processed 41 frames in 1.69s (avg 24.2 FPS)
+2025-09-19 17:11:49,855 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:11:49,855 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:11:49,864 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:11:49,864 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_171148.mp4
+2025-09-19 17:11:50,827 - src.main_window - INFO - Recording stopped
+2025-09-19 17:15:10,709 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:15:10,709 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:15:10,710 - root - INFO - Directory created/verified: config
+2025-09-19 17:15:10,710 - root - INFO - Directory created/verified: logs
+2025-09-19 17:15:10,711 - root - INFO - Directory created/verified: temp
+2025-09-19 17:15:10,751 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:15:10,751 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:15:10,752 - __main__ - INFO - Application controller initialized
+2025-09-19 17:15:10,752 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:15:10,755 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:15:10,757 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:15:10,773 - src.main_window - INFO - Main window initialized
+2025-09-19 17:15:10,773 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:15:10,773 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:15:14,932 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:15:14,970 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:15:14,971 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:15:14,971 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:15:14,971 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:15:14,976 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_171514.mp4
+2025-09-19 17:15:14,976 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:15:14,977 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:15:14,978 - src.main_window - INFO - Recording started
+2025-09-19 17:15:14,979 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_171514
+2025-09-19 17:15:19,269 - src.main_window - INFO - Click detected at (1482, 184) - Zoom triggered
+2025-09-19 17:15:19,305 - src.video_processor - INFO - Zoom effect started at (1482, 184), level: 2.0
+2025-09-19 17:15:20,200 - src.main_window - INFO - Click detected at (1810, 21) - Zoom triggered
+2025-09-19 17:15:21,664 - src.main_window - INFO - Click detected at (1118, 372) - Zoom triggered
+2025-09-19 17:15:21,758 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 3 clicks
+2025-09-19 17:15:21,768 - src.screen_capture - INFO - Screen capture stopped. Captured 170 frames in 6.79s (avg 25.0 FPS)
+2025-09-19 17:15:21,849 - src.video_processor - INFO - Video processing stopped. Processed 169 frames in 6.87s (avg 24.6 FPS)
+2025-09-19 17:15:21,849 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:15:21,849 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:15:21,876 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:15:21,878 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_171514.mp4
+2025-09-19 17:15:28,051 - src.main_window - INFO - Recording stopped
+2025-09-19 17:15:56,262 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:15:56,276 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:15:56,277 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:15:56,278 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:15:56,278 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:15:56,278 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:15:56,278 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:16:54,444 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:16:54,444 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:16:54,444 - root - INFO - Directory created/verified: config
+2025-09-19 17:16:54,445 - root - INFO - Directory created/verified: logs
+2025-09-19 17:16:54,445 - root - INFO - Directory created/verified: temp
+2025-09-19 17:16:54,482 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:16:54,482 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:16:54,482 - __main__ - INFO - Application controller initialized
+2025-09-19 17:16:54,482 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:16:54,486 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:16:54,487 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:16:54,503 - src.main_window - INFO - Main window initialized
+2025-09-19 17:16:54,503 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:16:54,503 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:16:57,279 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:16:57,316 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:16:57,316 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:16:57,316 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:16:57,316 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:16:57,321 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_171657.mp4
+2025-09-19 17:16:57,322 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:16:57,322 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:16:57,323 - src.main_window - INFO - Recording started
+2025-09-19 17:16:57,324 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_171657
+2025-09-19 17:16:59,745 - src.main_window - INFO - Click detected at (1474, 177) - Zoom triggered
+2025-09-19 17:16:59,812 - src.video_processor - INFO - Zoom effect started at (1474, 177), level: 2.0
+2025-09-19 17:17:00,512 - src.main_window - INFO - Click detected at (1150, 49) - Zoom triggered
+2025-09-19 17:17:02,727 - src.main_window - INFO - Click detected at (1073, 332) - Zoom triggered
+2025-09-19 17:17:02,837 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 3 clicks
+2025-09-19 17:17:02,868 - src.screen_capture - INFO - Screen capture stopped. Captured 132 frames in 5.55s (avg 23.8 FPS)
+2025-09-19 17:17:02,936 - src.video_processor - INFO - Video processing stopped. Processed 131 frames in 5.62s (avg 23.3 FPS)
+2025-09-19 17:17:02,936 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:17:02,937 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:17:02,961 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:17:02,962 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_171657.mp4
+2025-09-19 17:17:04,609 - src.main_window - INFO - Recording stopped
+2025-09-19 17:23:37,777 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:23:37,777 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:23:37,777 - root - INFO - Directory created/verified: config
+2025-09-19 17:23:37,778 - root - INFO - Directory created/verified: logs
+2025-09-19 17:23:37,778 - root - INFO - Directory created/verified: temp
+2025-09-19 17:23:37,821 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:23:37,822 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:23:37,822 - __main__ - INFO - Application controller initialized
+2025-09-19 17:23:37,822 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:23:37,826 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:23:37,828 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:23:37,845 - src.main_window - INFO - Main window initialized
+2025-09-19 17:23:37,846 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:23:37,846 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:23:40,737 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:23:40,778 - src.screen_capture - INFO - Custom cursor loaded successfully
+2025-09-19 17:23:40,778 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:23:40,778 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:23:40,778 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:23:40,778 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:23:40,783 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_172340.mp4
+2025-09-19 17:23:40,783 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:23:40,784 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:23:40,786 - src.main_window - INFO - Recording started
+2025-09-19 17:23:40,786 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_172340
+2025-09-19 17:23:41,675 - src.video_processor - INFO - Zoom effect started at (416, 198), level: 2.0
+2025-09-19 17:23:41,675 - src.main_window - INFO - Click detected at (416, 198) - Zoom triggered
+2025-09-19 17:23:42,875 - src.main_window - INFO - Click detected at (1183, 238) - Zoom triggered
+2025-09-19 17:23:44,328 - src.main_window - INFO - Click detected at (126, 201) - Zoom triggered
+2025-09-19 17:23:44,942 - src.main_window - INFO - Click detected at (389, 309) - Zoom triggered
+2025-09-19 17:23:46,593 - src.main_window - INFO - Click detected at (1625, 1043) - Zoom triggered
+2025-09-19 17:23:47,703 - src.video_processor - INFO - Zoom effect started at (1625, 1043), level: 2.0
+2025-09-19 17:23:48,048 - src.main_window - INFO - Click detected at (983, 332) - Zoom triggered
+2025-09-19 17:23:48,121 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 6 clicks
+2025-09-19 17:23:48,127 - src.screen_capture - INFO - Screen capture stopped. Captured 186 frames in 7.34s (avg 25.3 FPS)
+2025-09-19 17:23:48,218 - src.video_processor - INFO - Video processing stopped. Processed 185 frames in 7.44s (avg 24.9 FPS)
+2025-09-19 17:23:48,219 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:23:48,219 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:23:48,239 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:23:48,240 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_172340.mp4
+2025-09-19 17:23:49,521 - src.main_window - INFO - Recording stopped
+2025-09-19 17:24:16,019 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:24:16,031 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:24:16,032 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:24:16,032 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:24:16,033 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:24:16,033 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:24:16,033 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:25:56,673 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:25:56,673 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:25:56,673 - root - INFO - Directory created/verified: config
+2025-09-19 17:25:56,674 - root - INFO - Directory created/verified: logs
+2025-09-19 17:25:56,674 - root - INFO - Directory created/verified: temp
+2025-09-19 17:25:56,716 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:25:56,716 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:25:56,716 - __main__ - INFO - Application controller initialized
+2025-09-19 17:25:56,716 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:25:56,719 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:25:56,722 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:25:56,737 - src.main_window - INFO - Main window initialized
+2025-09-19 17:25:56,738 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:25:56,738 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:25:58,460 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:25:58,498 - src.screen_capture - INFO - Custom cursor loaded successfully
+2025-09-19 17:25:58,498 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:25:58,498 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:25:58,499 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:25:58,499 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:25:58,503 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_172558.mp4
+2025-09-19 17:25:58,504 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:25:58,504 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:25:58,507 - src.main_window - INFO - Recording started
+2025-09-19 17:25:58,507 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_172558
+2025-09-19 17:25:59,501 - src.video_processor - INFO - Zoom effect started at (1472, 192), level: 2.0
+2025-09-19 17:25:59,504 - src.main_window - INFO - Click detected at (1472, 192) - Zoom triggered
+2025-09-19 17:26:00,073 - src.main_window - INFO - Click detected at (1785, 18) - Zoom triggered
+2025-09-19 17:26:01,649 - src.main_window - INFO - Click detected at (1008, 336) - Zoom triggered
+2025-09-19 17:26:01,756 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 3 clicks
+2025-09-19 17:26:01,775 - src.screen_capture - INFO - Screen capture stopped. Captured 78 frames in 3.27s (avg 23.8 FPS)
+2025-09-19 17:26:01,852 - src.video_processor - INFO - Video processing stopped. Processed 77 frames in 3.35s (avg 23.0 FPS)
+2025-09-19 17:26:01,852 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:26:01,853 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:26:01,870 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:26:01,871 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_172558.mp4
+2025-09-19 17:26:03,006 - src.main_window - INFO - Recording stopped
+2025-09-19 17:26:25,910 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:26:25,923 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:26:25,924 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:26:25,924 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:26:25,924 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:26:25,924 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:26:25,924 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:30:33,925 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:30:33,926 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:30:33,926 - root - INFO - Directory created/verified: config
+2025-09-19 17:30:33,927 - root - INFO - Directory created/verified: logs
+2025-09-19 17:30:33,927 - root - INFO - Directory created/verified: temp
+2025-09-19 17:30:33,966 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:30:33,966 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:30:33,967 - __main__ - INFO - Application controller initialized
+2025-09-19 17:30:33,967 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:30:33,969 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:30:33,972 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:30:33,988 - src.main_window - INFO - Main window initialized
+2025-09-19 17:30:33,988 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:30:33,988 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:30:38,732 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:30:38,770 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 17:30:38,770 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:30:38,770 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:30:38,771 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:30:38,771 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:30:38,776 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_173038.mp4
+2025-09-19 17:30:38,776 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:30:38,777 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:30:38,778 - src.main_window - INFO - Recording started
+2025-09-19 17:30:38,779 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_173038
+2025-09-19 17:30:39,532 - src.main_window - INFO - Click detected at (1480, 256) - Zoom triggered
+2025-09-19 17:30:39,540 - src.video_processor - INFO - Zoom effect started at (1480, 256), level: 2.0
+2025-09-19 17:30:41,589 - src.main_window - INFO - Click detected at (1792, 15) - Zoom triggered
+2025-09-19 17:30:42,791 - src.main_window - INFO - Click detected at (690, 116) - Zoom triggered
+2025-09-19 17:30:44,274 - src.main_window - INFO - Click detected at (219, 235) - Zoom triggered
+2025-09-19 17:30:45,415 - src.main_window - INFO - Click detected at (891, 340) - Zoom triggered
+2025-09-19 17:30:45,500 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 5 clicks
+2025-09-19 17:30:45,522 - src.screen_capture - INFO - Screen capture stopped. Captured 161 frames in 6.75s (avg 23.9 FPS)
+2025-09-19 17:30:45,594 - src.video_processor - INFO - Video processing stopped. Processed 160 frames in 6.82s (avg 23.5 FPS)
+2025-09-19 17:30:45,595 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:30:45,595 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:30:45,613 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:30:45,614 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_173038.mp4
+2025-09-19 17:30:46,889 - src.main_window - INFO - Recording stopped
+2025-09-19 17:30:54,179 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:30:54,180 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:30:54,180 - root - INFO - Directory created/verified: config
+2025-09-19 17:30:54,180 - root - INFO - Directory created/verified: logs
+2025-09-19 17:30:54,181 - root - INFO - Directory created/verified: temp
+2025-09-19 17:30:54,221 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:30:54,221 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:30:54,221 - __main__ - INFO - Application controller initialized
+2025-09-19 17:30:54,221 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:30:54,225 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:30:54,228 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:30:54,245 - src.main_window - INFO - Main window initialized
+2025-09-19 17:30:54,246 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:30:54,246 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:31:08,174 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:31:08,184 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:31:08,185 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:31:08,185 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:31:08,186 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:31:08,186 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:31:08,186 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:36:44,010 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:36:44,010 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:36:44,010 - root - INFO - Directory created/verified: config
+2025-09-19 17:36:44,011 - root - INFO - Directory created/verified: logs
+2025-09-19 17:36:44,011 - root - INFO - Directory created/verified: temp
+2025-09-19 17:36:44,048 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:36:44,049 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:36:44,049 - __main__ - INFO - Application controller initialized
+2025-09-19 17:36:44,049 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:36:44,052 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:36:44,054 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:36:44,071 - src.main_window - INFO - Main window initialized
+2025-09-19 17:36:44,072 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:36:44,072 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:37:22,727 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:37:22,740 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:37:22,741 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:37:22,741 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:37:22,741 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:37:22,741 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:37:22,742 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:37:26,457 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:37:26,458 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:37:26,458 - root - INFO - Directory created/verified: config
+2025-09-19 17:37:26,459 - root - INFO - Directory created/verified: logs
+2025-09-19 17:37:26,459 - root - INFO - Directory created/verified: temp
+2025-09-19 17:37:26,519 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:37:26,520 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:37:26,520 - __main__ - INFO - Application controller initialized
+2025-09-19 17:37:26,520 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:37:26,525 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:37:26,528 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:37:26,546 - src.main_window - INFO - Main window initialized
+2025-09-19 17:37:26,546 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:37:26,546 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:37:27,878 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:37:27,925 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 17:37:27,926 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 17:37:27,926 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 17:37:27,926 - src.video_processor - INFO - Video processor initialized
+2025-09-19 17:37:27,927 - src.main_window - INFO - Recording components initialized
+2025-09-19 17:37:27,931 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_173727.mp4
+2025-09-19 17:37:27,932 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 17:37:27,933 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 17:37:27,934 - src.main_window - INFO - Recording started
+2025-09-19 17:37:27,934 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_173727
+2025-09-19 17:37:29,140 - src.video_processor - INFO - Zoom effect started at (1801, 21), level: 2.0
+2025-09-19 17:37:29,142 - src.main_window - INFO - Click detected at (1801, 21) - Zoom triggered
+2025-09-19 17:37:30,801 - src.main_window - INFO - Click detected at (1404, 96) - Zoom triggered
+2025-09-19 17:37:32,729 - src.main_window - INFO - Click detected at (970, 341) - Zoom triggered
+2025-09-19 17:37:32,818 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 3 clicks
+2025-09-19 17:37:32,876 - src.screen_capture - INFO - Screen capture stopped. Captured 109 frames in 4.94s (avg 22.0 FPS)
+2025-09-19 17:37:32,893 - src.video_processor - INFO - Video processing stopped. Processed 107 frames in 4.96s (avg 21.6 FPS)
+2025-09-19 17:37:32,893 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 17:37:32,893 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 17:37:32,914 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 17:37:32,915 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_173727.mp4
+2025-09-19 17:37:33,937 - src.main_window - INFO - Recording stopped
+2025-09-19 17:37:35,439 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:37:35,453 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:37:35,454 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:37:35,454 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:37:35,454 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:37:35,455 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:37:35,455 - src.app_controller - INFO - Initiating application shutdown
