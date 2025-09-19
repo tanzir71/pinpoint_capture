@@ -5355,3 +5355,1459 @@ TypeError: '_thread._ThreadHandle' object is not callable
 2025-09-19 17:37:35,454 - src.app_controller - INFO - Application exited with code: 0
 2025-09-19 17:37:35,455 - __main__ - INFO - Application finished with result: 0
 2025-09-19 17:37:35,455 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:40:18,548 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:40:18,549 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:40:18,549 - root - INFO - Directory created/verified: config
+2025-09-19 17:40:18,549 - root - INFO - Directory created/verified: logs
+2025-09-19 17:40:18,550 - root - INFO - Directory created/verified: temp
+2025-09-19 17:40:18,586 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:40:18,586 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:40:18,586 - __main__ - INFO - Application controller initialized
+2025-09-19 17:40:18,586 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:40:18,589 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:40:18,592 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:40:18,606 - src.main_window - INFO - Main window initialized
+2025-09-19 17:40:18,606 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:40:18,606 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:40:50,746 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:51,186 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:52,258 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:52,746 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:53,106 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:53,306 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:53,506 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:53,714 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:54,250 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:54,466 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:54,626 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:54,818 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:55,026 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:55,218 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:55,418 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:55,594 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:56,570 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:56,754 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:56,930 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,122 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,186 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,314 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,370 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,562 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:40:57,746 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:01,138 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:01,314 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:01,530 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:01,738 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:02,499 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:02,770 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:03,066 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:03,266 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:03,466 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:03,714 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:03,834 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:04,018 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:04,210 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:04,394 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:13,739 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:14,074 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:53,310 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:53,323 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:41:53,324 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:41:53,324 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:41:53,324 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:41:53,324 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:41:53,324 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 17:42:41,531 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 17:42:41,532 - root - INFO - Directory created/verified: recordings
+2025-09-19 17:42:41,532 - root - INFO - Directory created/verified: config
+2025-09-19 17:42:41,532 - root - INFO - Directory created/verified: logs
+2025-09-19 17:42:41,532 - root - INFO - Directory created/verified: temp
+2025-09-19 17:42:41,565 - src.app_controller - INFO - Logging system initialized
+2025-09-19 17:42:41,566 - src.app_controller - INFO - Application controller initialized
+2025-09-19 17:42:41,566 - __main__ - INFO - Application controller initialized
+2025-09-19 17:42:41,566 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 17:42:41,569 - src.app_controller - INFO - System requirements check passed
+2025-09-19 17:42:41,570 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 17:42:41,583 - src.main_window - INFO - Main window initialized
+2025-09-19 17:42:41,583 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 17:42:41,584 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 17:42:43,632 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:44,149 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:44,789 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:45,269 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:45,525 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:45,789 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:46,910 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:47,477 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:47,765 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:48,438 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:48,829 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:49,045 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:49,245 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:49,709 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:50,397 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:50,605 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:51,301 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:51,509 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:52,933 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:53,117 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:53,693 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:53,869 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:54,709 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:54,893 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:55,461 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:55,661 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:56,293 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:56,493 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:56,669 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:56,845 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:57,165 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:57,357 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:57,541 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:57,725 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:57,909 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:58,094 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:58,277 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:58,461 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:42:58,637 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:00,574 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:00,765 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:00,941 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:01,125 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:01,293 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:01,477 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:01,645 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:02,021 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:04,920 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:04,934 - src.app_controller - INFO - Application quit event received
+2025-09-19 17:43:04,934 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 17:43:04,935 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 17:43:04,935 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 17:43:04,935 - __main__ - INFO - Application finished with result: 0
+2025-09-19 17:43:04,935 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:03:35,264 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:03:35,265 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:03:35,265 - root - INFO - Directory created/verified: config
+2025-09-19 18:03:35,265 - root - INFO - Directory created/verified: logs
+2025-09-19 18:03:35,266 - root - INFO - Directory created/verified: temp
+2025-09-19 18:03:35,301 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:03:35,301 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:03:35,301 - __main__ - INFO - Application controller initialized
+2025-09-19 18:03:35,301 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:03:35,304 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:03:35,305 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:03:35,318 - src.main_window - INFO - Main window initialized
+2025-09-19 18:03:35,318 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:03:35,318 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:03:39,987 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:03:42,029 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:03:45,220 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:03:45,965 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:03:46,597 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:03:46,909 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:44,177 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:04:44,177 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:04:44,178 - root - INFO - Directory created/verified: config
+2025-09-19 18:04:44,178 - root - INFO - Directory created/verified: logs
+2025-09-19 18:04:44,178 - root - INFO - Directory created/verified: temp
+2025-09-19 18:04:44,214 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:04:44,214 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:04:44,215 - __main__ - INFO - Application controller initialized
+2025-09-19 18:04:44,215 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:04:44,218 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:04:44,219 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:04:44,232 - src.main_window - INFO - Main window initialized
+2025-09-19 18:04:44,233 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:04:44,233 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:04:47,490 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:48,110 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:49,030 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:49,438 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:50,310 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:51,942 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:52,199 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:04:52,422 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:27,448 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:28,031 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:28,863 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:29,231 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:44,225 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:44,239 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:05:44,240 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:05:44,240 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:05:44,241 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:05:44,241 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:05:44,241 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:05:58,676 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:05:58,677 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:05:58,677 - root - INFO - Directory created/verified: config
+2025-09-19 18:05:58,677 - root - INFO - Directory created/verified: logs
+2025-09-19 18:05:58,678 - root - INFO - Directory created/verified: temp
+2025-09-19 18:05:58,711 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:05:58,711 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:05:58,711 - __main__ - INFO - Application controller initialized
+2025-09-19 18:05:58,711 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:05:58,714 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:05:58,715 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:05:58,728 - src.main_window - INFO - Main window initialized
+2025-09-19 18:05:58,729 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:05:58,729 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:06:26,351 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:06:26,351 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:06:26,351 - root - INFO - Directory created/verified: config
+2025-09-19 18:06:26,352 - root - INFO - Directory created/verified: logs
+2025-09-19 18:06:26,352 - root - INFO - Directory created/verified: temp
+2025-09-19 18:06:26,388 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:06:26,389 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:06:26,389 - __main__ - INFO - Application controller initialized
+2025-09-19 18:06:26,389 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:06:26,392 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:06:26,393 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:06:26,409 - src.main_window - INFO - Main window initialized
+2025-09-19 18:06:26,410 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:06:26,410 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:06:29,732 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:06:30,337 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:06:32,363 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:06:32,377 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:06:32,378 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:06:32,378 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:06:32,379 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:06:32,379 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:06:32,379 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:07:14,585 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:07:14,586 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:07:14,586 - root - INFO - Directory created/verified: config
+2025-09-19 18:07:14,586 - root - INFO - Directory created/verified: logs
+2025-09-19 18:07:14,587 - root - INFO - Directory created/verified: temp
+2025-09-19 18:07:14,622 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:07:14,622 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:07:14,622 - __main__ - INFO - Application controller initialized
+2025-09-19 18:07:14,622 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:07:14,625 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:07:14,626 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:07:14,639 - src.main_window - INFO - Main window initialized
+2025-09-19 18:07:14,640 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:07:14,640 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:07:59,916 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:00,443 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:01,252 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:01,483 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:01,995 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:02,443 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:02,899 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:03,627 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:13,659 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:08:13,707 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:10:55,056 - src.app_controller - INFO - Received signal 2, initiating shutdown
+2025-09-19 18:10:55,056 - src.app_controller - INFO - Shutdown requested
+2025-09-19 18:10:55,056 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:10:55,059 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:10:55,102 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:10:55,117 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:10:55,118 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:10:55,118 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:10:55,120 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:10:55,120 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:10:57,358 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:10:57,358 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:10:57,359 - root - INFO - Directory created/verified: config
+2025-09-19 18:10:57,359 - root - INFO - Directory created/verified: logs
+2025-09-19 18:10:57,359 - root - INFO - Directory created/verified: temp
+2025-09-19 18:10:57,393 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:10:57,393 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:10:57,393 - __main__ - INFO - Application controller initialized
+2025-09-19 18:10:57,393 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:10:57,396 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:10:57,398 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:10:57,406 - src.app_controller - ERROR - Failed to initialize application: 'MainWindow' object has no attribute 'frames_label'
+2025-09-19 18:11:01,263 - __main__ - ERROR - Application initialization failed
+2025-09-19 18:11:01,263 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:11:42,198 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:11:42,198 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:11:42,198 - root - INFO - Directory created/verified: config
+2025-09-19 18:11:42,199 - root - INFO - Directory created/verified: logs
+2025-09-19 18:11:42,199 - root - INFO - Directory created/verified: temp
+2025-09-19 18:11:42,239 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:11:42,239 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:11:42,239 - __main__ - INFO - Application controller initialized
+2025-09-19 18:11:42,239 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:11:42,243 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:11:42,245 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:11:42,258 - src.app_controller - ERROR - Failed to initialize application: name 'background' is not defined
+2025-09-19 18:11:53,070 - __main__ - ERROR - Application initialization failed
+2025-09-19 18:11:53,070 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:12:46,621 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:12:46,622 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:12:46,622 - root - INFO - Directory created/verified: config
+2025-09-19 18:12:46,622 - root - INFO - Directory created/verified: logs
+2025-09-19 18:12:46,623 - root - INFO - Directory created/verified: temp
+2025-09-19 18:12:46,660 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:12:46,661 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:12:46,661 - __main__ - INFO - Application controller initialized
+2025-09-19 18:12:46,661 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:12:46,664 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:12:46,666 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:12:46,681 - src.main_window - INFO - Main window initialized
+2025-09-19 18:12:46,681 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:12:46,681 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:12:49,348 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:49,827 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:50,866 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:51,178 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:52,058 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:52,258 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:52,434 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:52,642 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:54,235 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:54,467 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:54,642 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:54,819 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:55,626 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:55,842 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:56,019 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:12:56,411 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:13:24,052 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:13:27,037 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:13:27,092 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:13:27,092 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:13:27,092 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 18:13:27,092 - src.video_processor - INFO - Video processor initialized
+2025-09-19 18:13:27,093 - src.main_window - INFO - Recording components initialized
+2025-09-19 18:13:27,097 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_181327.mp4
+2025-09-19 18:13:27,098 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 18:13:27,099 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 18:13:27,101 - src.main_window - INFO - Recording started
+2025-09-19 18:13:27,102 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_181327
+2025-09-19 18:13:28,380 - src.main_window - INFO - Click detected at (1799, 19) - Zoom triggered
+2025-09-19 18:13:28,392 - src.video_processor - INFO - Zoom effect started at (1799, 19), level: 2.0
+2025-09-19 18:13:30,404 - src.main_window - INFO - Click detected at (980, 343) - Zoom triggered
+2025-09-19 18:13:30,478 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 2 clicks
+2025-09-19 18:13:30,508 - src.screen_capture - INFO - Screen capture stopped. Captured 79 frames in 3.41s (avg 23.2 FPS)
+2025-09-19 18:13:30,586 - src.video_processor - INFO - Video processing stopped. Processed 78 frames in 3.49s (avg 22.3 FPS)
+2025-09-19 18:13:30,587 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 18:13:30,587 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:13:30,602 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 18:13:30,603 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_181327.mp4
+2025-09-19 18:13:33,483 - src.main_window - INFO - Recording stopped
+2025-09-19 18:18:47,942 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:18:47,957 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:18:47,958 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:18:47,958 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:18:47,958 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:18:47,958 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:18:47,958 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:18:52,891 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:18:52,891 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:18:52,891 - root - INFO - Directory created/verified: config
+2025-09-19 18:18:52,892 - root - INFO - Directory created/verified: logs
+2025-09-19 18:18:52,893 - root - INFO - Directory created/verified: temp
+2025-09-19 18:18:52,942 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:18:52,943 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:18:52,943 - __main__ - INFO - Application controller initialized
+2025-09-19 18:18:52,943 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:18:52,946 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:18:52,948 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:18:52,969 - src.main_window - INFO - Main window initialized
+2025-09-19 18:18:52,969 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:18:52,969 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:18:58,205 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:19:01,605 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:19:02,597 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:19:02,634 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:19:02,634 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:19:02,634 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 18:19:02,634 - src.video_processor - INFO - Video processor initialized
+2025-09-19 18:19:02,634 - src.main_window - INFO - Recording components initialized
+2025-09-19 18:19:02,639 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_181902.mp4
+2025-09-19 18:19:02,639 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 18:19:02,640 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 18:19:02,642 - src.main_window - INFO - Recording started
+2025-09-19 18:19:02,642 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_181902
+2025-09-19 18:19:04,262 - src.main_window - INFO - Click detected at (1802, 9) - Zoom triggered
+2025-09-19 18:19:04,270 - src.video_processor - INFO - Zoom effect started at (1802, 9), level: 2.0
+2025-09-19 18:19:05,117 - src.main_window - INFO - Click detected at (1356, 76) - Zoom triggered
+2025-09-19 18:19:07,317 - src.main_window - INFO - Click detected at (978, 418) - Zoom triggered
+2025-09-19 18:19:08,591 - src.main_window - INFO - Click detected at (977, 338) - Zoom triggered
+2025-09-19 18:19:08,686 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 4 clicks
+2025-09-19 18:19:08,710 - src.screen_capture - INFO - Screen capture stopped. Captured 139 frames in 6.07s (avg 22.9 FPS)
+2025-09-19 18:19:08,782 - src.video_processor - INFO - Video processing stopped. Processed 138 frames in 6.14s (avg 22.5 FPS)
+2025-09-19 18:19:08,782 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 18:19:08,783 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:19:08,803 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 18:19:08,804 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_181902.mp4
+2025-09-19 18:19:12,309 - src.main_window - INFO - Recording stopped
+2025-09-19 18:19:59,215 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:19:59,273 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:19:59,275 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:19:59,275 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:19:59,277 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:19:59,277 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:19:59,277 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:39:14,091 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:39:14,092 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:39:14,092 - root - INFO - Directory created/verified: config
+2025-09-19 18:39:14,092 - root - INFO - Directory created/verified: logs
+2025-09-19 18:39:14,093 - root - INFO - Directory created/verified: temp
+2025-09-19 18:39:14,139 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:39:14,139 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:39:14,139 - __main__ - INFO - Application controller initialized
+2025-09-19 18:39:14,139 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:39:14,142 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:39:14,143 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:39:14,158 - src.main_window - INFO - Main window initialized
+2025-09-19 18:39:14,158 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:39:14,158 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:39:17,819 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:18,818 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:20,418 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:28,987 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:28,994 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:39:28,995 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:39:28,995 - src.main_window - ERROR - Error setting up components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:39:28,995 - src.main_window - INFO - ERROR: Failed to initialize recording components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:39:37,260 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:37,261 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:39:37,304 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:39:37,305 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:39:37,305 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:39:37,306 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:39:37,306 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:39:37,306 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:43:07,023 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:43:07,023 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:43:07,024 - root - INFO - Directory created/verified: config
+2025-09-19 18:43:07,024 - root - INFO - Directory created/verified: logs
+2025-09-19 18:43:07,024 - root - INFO - Directory created/verified: temp
+2025-09-19 18:43:07,056 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:43:07,056 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:43:07,056 - __main__ - INFO - Application controller initialized
+2025-09-19 18:43:07,056 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:43:07,059 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:43:07,060 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:43:07,075 - src.main_window - INFO - Main window initialized
+2025-09-19 18:43:07,075 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:43:07,075 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:43:10,521 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:43:10,523 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:43:10,524 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:43:10,524 - src.main_window - ERROR - Error setting up components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:43:10,524 - src.main_window - INFO - ERROR: Failed to initialize recording components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:43:33,747 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:43:33,747 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:43:33,760 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:43:33,761 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:43:33,761 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:43:33,762 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:43:33,762 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:43:33,762 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:43:36,996 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:43:36,997 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:43:36,997 - root - INFO - Directory created/verified: config
+2025-09-19 18:43:36,997 - root - INFO - Directory created/verified: logs
+2025-09-19 18:43:36,997 - root - INFO - Directory created/verified: temp
+2025-09-19 18:43:37,028 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:43:37,028 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:43:37,028 - __main__ - INFO - Application controller initialized
+2025-09-19 18:43:37,029 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:43:37,031 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:43:37,033 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:43:37,046 - src.main_window - INFO - Main window initialized
+2025-09-19 18:43:37,046 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:43:37,046 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:43:38,881 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:43:38,884 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:43:38,884 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:43:38,884 - src.main_window - ERROR - Error setting up components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:43:38,885 - src.main_window - INFO - ERROR: Failed to initialize recording components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:43:48,954 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:43:48,954 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:43:48,954 - root - INFO - Directory created/verified: config
+2025-09-19 18:43:48,955 - root - INFO - Directory created/verified: logs
+2025-09-19 18:43:48,955 - root - INFO - Directory created/verified: temp
+2025-09-19 18:43:48,985 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:43:48,986 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:43:48,986 - __main__ - INFO - Application controller initialized
+2025-09-19 18:43:48,986 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:43:48,989 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:43:48,990 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:43:49,003 - src.main_window - INFO - Main window initialized
+2025-09-19 18:43:49,003 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:43:49,004 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:43:50,962 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:43:50,965 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:43:50,965 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:43:50,965 - src.main_window - ERROR - Error setting up components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:43:50,965 - src.main_window - INFO - ERROR: Failed to initialize recording components: 'RecordingController' object has no attribute '_on_frame_captured'
+2025-09-19 18:44:37,163 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:44:37,164 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:44:37,176 - src.app_controller - INFO - Application quit event received
+2025-09-19 18:44:37,177 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:44:37,177 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 18:44:37,177 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 18:44:37,178 - __main__ - INFO - Application finished with result: 0
+2025-09-19 18:44:37,178 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 18:45:21,225 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 18:45:21,225 - root - INFO - Directory created/verified: recordings
+2025-09-19 18:45:21,226 - root - INFO - Directory created/verified: config
+2025-09-19 18:45:21,226 - root - INFO - Directory created/verified: logs
+2025-09-19 18:45:21,226 - root - INFO - Directory created/verified: temp
+2025-09-19 18:45:21,259 - src.app_controller - INFO - Logging system initialized
+2025-09-19 18:45:21,260 - src.app_controller - INFO - Application controller initialized
+2025-09-19 18:45:21,260 - __main__ - INFO - Application controller initialized
+2025-09-19 18:45:21,260 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 18:45:21,263 - src.app_controller - INFO - System requirements check passed
+2025-09-19 18:45:21,264 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 18:45:21,278 - src.main_window - INFO - Main window initialized
+2025-09-19 18:45:21,278 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 18:45:21,278 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 18:45:23,244 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:45:23,247 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 18:45:23,247 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 18:45:23,247 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 18:45:23,247 - src.video_processor - INFO - Video processor initialized
+2025-09-19 18:45:23,248 - src.main_window - INFO - Recording components initialized
+2025-09-19 18:45:23,266 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_184523.mp4
+2025-09-19 18:45:23,267 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 18:45:23,295 - src.audio_recorder - INFO - Audio recording started: recordings\pinpoint_capture_20250919_184523.wav
+2025-09-19 18:45:23,296 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 18:45:23,297 - src.main_window - INFO - Recording started
+2025-09-19 18:45:23,297 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_184523
+2025-09-19 18:45:28,142 - src.main_window - INFO - Click detected at (1174, 243) - Zoom triggered
+2025-09-19 18:45:29,084 - src.main_window - INFO - Click detected at (1477, 186) - Zoom triggered
+2025-09-19 18:45:29,849 - src.main_window - INFO - Click detected at (1806, 16) - Zoom triggered
+2025-09-19 18:45:30,771 - src.main_window - INFO - Click detected at (662, 412) - Zoom triggered
+2025-09-19 18:45:30,930 - src.main_window - INFO - Click detected at (661, 409) - Zoom triggered
+2025-09-19 18:45:32,252 - src.main_window - INFO - Click detected at (1603, 1047) - Zoom triggered
+2025-09-19 18:45:33,475 - src.main_window - INFO - Click detected at (1014, 425) - Zoom triggered
+2025-09-19 18:45:34,276 - src.main_window - INFO - Click detected at (985, 340) - Zoom triggered
+2025-09-19 18:45:34,392 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 8 clicks
+2025-09-19 18:45:34,420 - src.screen_capture - INFO - Screen capture stopped. Captured 264 frames in 11.15s (avg 23.7 FPS)
+2025-09-19 18:45:34,504 - src.video_processor - INFO - Video processing stopped. Processed 263 frames in 11.24s (avg 23.4 FPS)
+2025-09-19 18:45:34,550 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 18:45:37,287 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+
+2025-09-19 18:45:40,895 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file recordings\pinpoint_capture_20250919_184523.mp4, 6220800 bytes wanted but 0 bytes read,at frame 263/264, at time 6.58/6.58 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-09-19 18:45:41,068 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 18:45:41,069 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 18:45:41,086 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 18:45:41,087 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_184523.mp4
+2025-09-19 18:45:42,838 - src.main_window - INFO - Recording stopped
+2025-09-19 18:46:57,277 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:46:59,637 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 18:47:01,613 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:11:04,729 - src.app_controller - INFO - Received signal 2, initiating shutdown
+2025-09-19 19:11:04,729 - src.app_controller - INFO - Shutdown requested
+2025-09-19 19:11:04,730 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:11:04,749 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:11:04,749 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:11:04,750 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:11:04,750 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:11:04,750 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:11:04,751 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:11:14,922 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:11:14,923 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:11:14,923 - root - INFO - Directory created/verified: config
+2025-09-19 19:11:14,923 - root - INFO - Directory created/verified: logs
+2025-09-19 19:11:14,923 - root - INFO - Directory created/verified: temp
+2025-09-19 19:11:14,954 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:11:14,954 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:11:14,954 - __main__ - INFO - Application controller initialized
+2025-09-19 19:11:14,954 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:11:14,957 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:11:14,959 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:11:14,966 - src.app_controller - ERROR - Failed to initialize application: 'MainWindow' object has no attribute 'frames_label'
+2025-09-19 19:11:16,503 - __main__ - ERROR - Application initialization failed
+2025-09-19 19:11:16,503 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:11:57,792 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:11:57,792 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:11:57,792 - root - INFO - Directory created/verified: config
+2025-09-19 19:11:57,793 - root - INFO - Directory created/verified: logs
+2025-09-19 19:11:57,793 - root - INFO - Directory created/verified: temp
+2025-09-19 19:11:57,835 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:11:57,835 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:11:57,835 - __main__ - INFO - Application controller initialized
+2025-09-19 19:11:57,836 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:11:57,841 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:11:57,844 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:11:57,857 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:11:57,857 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:11:57,864 - src.main_window - INFO - Main window initialized
+2025-09-19 19:11:57,864 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:11:57,864 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:12:01,914 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:01,954 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:01,986 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:02,026 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:41,782 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:41,797 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:12:41,798 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:12:41,799 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:12:41,800 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:12:41,800 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:12:41,800 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:15:45,198 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:15:45,199 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:15:45,199 - root - INFO - Directory created/verified: config
+2025-09-19 19:15:45,200 - root - INFO - Directory created/verified: logs
+2025-09-19 19:15:45,200 - root - INFO - Directory created/verified: temp
+2025-09-19 19:15:45,247 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:15:45,248 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:15:45,248 - __main__ - INFO - Application controller initialized
+2025-09-19 19:15:45,249 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:15:45,253 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:15:45,256 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:15:45,273 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:15:45,274 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:15:45,275 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:15:45,275 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (ID: 0)
+2025-09-19 19:15:45,275 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 1)
+2025-09-19 19:15:45,276 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 2)
+2025-09-19 19:15:45,276 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 3)
+2025-09-19 19:15:45,276 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (ID: 9)
+2025-09-19 19:15:45,276 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 10)
+2025-09-19 19:15:45,296 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 11)
+2025-09-19 19:15:45,302 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 12)
+2025-09-19 19:15:45,306 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 22)
+2025-09-19 19:15:45,307 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 23)
+2025-09-19 19:15:45,307 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 24)
+2025-09-19 19:15:45,307 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo i... (ID: 25)
+2025-09-19 19:15:45,307 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (ID: 28)
+2025-09-19 19:15:45,308 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (ID: 29)
+2025-09-19 19:15:45,308 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 31)
+2025-09-19 19:15:45,308 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.... (ID: 35)
+2025-09-19 19:15:45,308 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (ID: 36)
+2025-09-19 19:15:45,309 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 39)
+2025-09-19 19:15:45,309 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:15:45,316 - src.main_window - INFO - Main window initialized
+2025-09-19 19:15:45,317 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:15:45,317 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:17:53,141 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:17:53,180 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:17:53,181 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:17:53,182 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:17:53,183 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:17:53,183 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:17:53,183 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:18:09,481 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:18:09,482 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:18:09,482 - root - INFO - Directory created/verified: config
+2025-09-19 19:18:09,482 - root - INFO - Directory created/verified: logs
+2025-09-19 19:18:09,483 - root - INFO - Directory created/verified: temp
+2025-09-19 19:18:09,514 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:18:09,514 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:18:09,514 - __main__ - INFO - Application controller initialized
+2025-09-19 19:18:09,514 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:18:09,517 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:18:09,519 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:18:09,530 - src.app_controller - ERROR - Failed to initialize application: 'MainWindow' object has no attribute 'frames_label'
+2025-09-19 19:18:15,462 - __main__ - ERROR - Application initialization failed
+2025-09-19 19:18:15,462 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:19:54,949 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:19:54,949 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:19:54,950 - root - INFO - Directory created/verified: config
+2025-09-19 19:19:54,950 - root - INFO - Directory created/verified: logs
+2025-09-19 19:19:54,950 - root - INFO - Directory created/verified: temp
+2025-09-19 19:19:54,984 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:19:54,984 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:19:54,984 - __main__ - INFO - Application controller initialized
+2025-09-19 19:19:54,984 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:19:54,987 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:19:54,989 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:19:55,004 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:19:55,004 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:19:55,005 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:19:55,005 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:19:55,005 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:19:55,005 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:19:55,006 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:19:55,006 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:19:55,006 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:19:55,006 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:19:55,007 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:19:55,007 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:19:55,007 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:19:55,007 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:19:55,007 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:19:55,008 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:19:55,008 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:19:55,008 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:19:55,008 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:19:55,008 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:19:55,009 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:19:55,009 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:19:55,013 - src.main_window - INFO - Main window initialized
+2025-09-19 19:19:55,013 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:19:55,013 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:19:58,439 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:19:58,440 - src.main_window - INFO - Selected microphone device: 
+2025-09-19 19:19:58,440 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:19:58,440 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:19:58,441 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:19:58,441 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:19:58,441 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:19:58,441 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:19:58,441 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:19:58,442 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:19:58,443 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:19:58,443 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:19:58,443 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:19:58,443 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:19:58,443 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:19:58,444 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:19:58,444 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:19:58,444 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:19:58,444 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:20:09,015 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:20:09,016 - src.main_window - INFO - Selected microphone device: 
+2025-09-19 19:20:09,016 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:20:09,016 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:20:09,017 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:20:09,017 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:20:09,017 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:20:09,017 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:20:09,017 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:20:09,017 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:20:09,018 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:20:09,019 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:20:28,480 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:20:49,271 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:22:13,028 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:22:13,038 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:22:13,039 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:22:13,040 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:22:13,040 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:22:13,040 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:22:13,040 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:24:07,531 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:24:07,532 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:24:07,532 - root - INFO - Directory created/verified: config
+2025-09-19 19:24:07,532 - root - INFO - Directory created/verified: logs
+2025-09-19 19:24:07,533 - root - INFO - Directory created/verified: temp
+2025-09-19 19:24:07,567 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:24:07,567 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:24:07,567 - __main__ - INFO - Application controller initialized
+2025-09-19 19:24:07,567 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:24:07,570 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:24:07,573 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:24:07,587 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:07,588 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:24:07,588 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:24:07,588 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:24:07,588 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:24:07,589 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:24:07,590 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:24:07,590 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:24:07,590 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:24:07,590 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:24:07,591 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:24:07,592 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:24:07,596 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:07,596 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:24:07,596 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:24:07,597 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:24:07,597 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:24:07,597 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:24:07,597 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:24:07,597 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:24:07,598 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:24:07,598 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:24:07,598 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:24:07,598 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:24:07,598 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:24:07,599 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:24:07,600 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:24:07,600 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:24:07,600 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:24:07,607 - src.main_window - INFO - Main window initialized
+2025-09-19 19:24:07,607 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:24:07,608 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:24:10,957 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:10,958 - src.main_window - INFO - Selected microphone device: 
+2025-09-19 19:24:10,958 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:10,958 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:24:10,959 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:24:10,959 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:24:10,959 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:24:10,959 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:24:10,959 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:24:10,960 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:24:10,961 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:24:10,962 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:24:13,677 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:16,806 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:16,806 - src.main_window - INFO - Selected microphone device: 
+2025-09-19 19:24:16,807 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:16,807 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:24:16,808 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:24:16,808 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:24:16,808 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:24:16,808 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:24:16,808 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:24:16,808 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:24:16,809 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:24:16,809 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:24:16,809 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:24:16,809 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:24:16,809 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:24:16,810 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:24:16,811 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:24:16,811 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:24:16,811 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:24:21,014 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:21,037 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:21,053 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:21,077 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:21,110 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:26,206 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:27,294 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:28,566 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:32,607 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:32,652 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:24:32,653 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:24:32,653 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:24:32,654 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:24:32,654 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:24:32,654 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:25:00,263 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:25:00,263 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:25:00,264 - root - INFO - Directory created/verified: config
+2025-09-19 19:25:00,264 - root - INFO - Directory created/verified: logs
+2025-09-19 19:25:00,264 - root - INFO - Directory created/verified: temp
+2025-09-19 19:25:00,296 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:25:00,296 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:25:00,296 - __main__ - INFO - Application controller initialized
+2025-09-19 19:25:00,296 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:25:00,299 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:25:00,301 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:25:00,315 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:25:00,315 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:25:00,315 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (MME) (ID: 0)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (MME) (ID: 1)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (MME) (ID: 2)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (MME) (ID: 3)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (Windows DirectSound) (ID: 9)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows DirectSound) (ID: 10)
+2025-09-19 19:25:00,316 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows DirectSound) (ID: 11)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows DirectSound) (ID: 12)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WASAPI) (ID: 22)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (Windows WASAPI) (ID: 23)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WASAPI) (ID: 24)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo input) (Windows WDM-KS) (ID: 25)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (Windows WDM-KS) (ID: 28)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (Windows WDM-KS) (ID: 29)
+2025-09-19 19:25:00,317 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (Windows WDM-KS) (ID: 31)
+2025-09-19 19:25:00,318 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free... (ID: 35)
+2025-09-19 19:25:00,318 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (Windows WDM-KS) (ID: 36)
+2025-09-19 19:25:00,318 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (Windows WDM-KS) (ID: 39)
+2025-09-19 19:25:00,318 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:25:00,322 - src.main_window - INFO - Main window initialized
+2025-09-19 19:25:00,323 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:25:00,323 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:25:08,839 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:25:08,840 - src.main_window - INFO - Selected microphone device: Microphone (Fantech Leviosa) (Windows DirectSound)
+2025-09-19 19:25:16,388 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:25:16,391 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:25:16,391 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:25:16,391 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:25:16,391 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:25:16,392 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:25:16,397 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_192516.mp4
+2025-09-19 19:25:16,398 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:25:16,424 - src.audio_recorder - INFO - Audio recording started: recordings\pinpoint_capture_20250919_192516.wav
+2025-09-19 19:25:16,425 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:25:16,427 - src.main_window - INFO - Recording started
+2025-09-19 19:25:16,427 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_192516
+2025-09-19 19:25:20,006 - src.main_window - INFO - Click detected at (1553, 305) - Zoom triggered
+2025-09-19 19:25:20,718 - src.main_window - INFO - Click detected at (1781, 19) - Zoom triggered
+2025-09-19 19:25:22,297 - src.main_window - INFO - Click detected at (1785, 1) - Zoom triggered
+2025-09-19 19:25:23,144 - src.main_window - INFO - Click detected at (1710, 166) - Zoom triggered
+2025-09-19 19:25:24,126 - src.main_window - INFO - Click detected at (947, 324) - Zoom triggered
+2025-09-19 19:25:24,214 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 5 clicks
+2025-09-19 19:25:24,254 - src.screen_capture - INFO - Screen capture stopped. Captured 189 frames in 7.86s (avg 24.1 FPS)
+2025-09-19 19:25:24,286 - src.video_processor - INFO - Video processing stopped. Processed 187 frames in 7.89s (avg 23.7 FPS)
+2025-09-19 19:25:24,368 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:25:24,812 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+
+2025-09-19 19:25:27,725 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:25:27,725 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:25:27,743 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:25:27,744 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_192516.mp4
+2025-09-19 19:25:28,971 - src.main_window - INFO - Recording stopped
+2025-09-19 19:27:12,284 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:27:12,297 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:27:12,298 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:27:12,298 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:27:12,298 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:27:12,298 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:27:12,299 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:27:49,575 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:27:49,576 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:27:49,576 - root - INFO - Directory created/verified: config
+2025-09-19 19:27:49,576 - root - INFO - Directory created/verified: logs
+2025-09-19 19:27:49,577 - root - INFO - Directory created/verified: temp
+2025-09-19 19:27:49,612 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:27:49,612 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:27:49,612 - __main__ - INFO - Application controller initialized
+2025-09-19 19:27:49,612 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:27:49,615 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:27:49,617 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:27:49,628 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:27:49,628 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:27:49,629 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:27:49,629 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (ID: 0)
+2025-09-19 19:27:49,629 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 1)
+2025-09-19 19:27:49,629 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 2)
+2025-09-19 19:27:49,629 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 3)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (ID: 9)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 10)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 11)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 12)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 22)
+2025-09-19 19:27:49,630 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 23)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 24)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo i... (ID: 25)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (ID: 28)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (ID: 29)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 31)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.... (ID: 35)
+2025-09-19 19:27:49,631 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (ID: 36)
+2025-09-19 19:27:49,632 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 39)
+2025-09-19 19:27:49,632 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:27:49,635 - src.main_window - INFO - Main window initialized
+2025-09-19 19:27:49,635 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:27:49,636 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:27:54,529 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:27:54,532 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:27:54,532 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:27:54,532 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:27:54,532 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:27:54,533 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:27:54,537 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_192754.mp4
+2025-09-19 19:27:54,537 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:27:54,564 - src.audio_recorder - INFO - Audio recording started: recordings\pinpoint_capture_20250919_192754.wav
+2025-09-19 19:27:54,565 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:27:54,565 - src.main_window - INFO - Recording started
+2025-09-19 19:27:54,566 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_192754
+2025-09-19 19:27:56,532 - src.main_window - INFO - Click detected at (1176, 242) - Zoom triggered
+2025-09-19 19:27:56,991 - src.main_window - INFO - Click detected at (1384, 234) - Zoom triggered
+2025-09-19 19:27:58,254 - src.main_window - INFO - Click detected at (1788, 14) - Zoom triggered
+2025-09-19 19:27:59,101 - src.main_window - INFO - Click detected at (1615, 1054) - Zoom triggered
+2025-09-19 19:28:00,072 - src.main_window - INFO - Click detected at (943, 337) - Zoom triggered
+2025-09-19 19:28:00,187 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 5 clicks
+2025-09-19 19:28:00,207 - src.screen_capture - INFO - Screen capture stopped. Captured 135 frames in 5.67s (avg 23.8 FPS)
+2025-09-19 19:28:00,279 - src.video_processor - INFO - Video processing stopped. Processed 134 frames in 5.74s (avg 23.3 FPS)
+2025-09-19 19:28:00,309 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:28:00,735 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+
+2025-09-19 19:28:02,961 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:28:02,961 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:28:02,979 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:28:02,980 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_192754.mp4
+2025-09-19 19:28:04,147 - src.main_window - INFO - Recording stopped
+2025-09-19 19:29:29,570 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:29,571 - src.main_window - INFO - Selected microphone device: Microphone (Fantech Leviosa)
+2025-09-19 19:29:33,777 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:36,027 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:36,793 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:38,023 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:29:38,023 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:29:38,023 - root - INFO - Directory created/verified: config
+2025-09-19 19:29:38,024 - root - INFO - Directory created/verified: logs
+2025-09-19 19:29:38,024 - root - INFO - Directory created/verified: temp
+2025-09-19 19:29:38,055 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:29:38,055 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:29:38,055 - __main__ - INFO - Application controller initialized
+2025-09-19 19:29:38,055 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:29:38,058 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:29:38,060 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:29:38,071 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:38,071 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:29:38,072 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:29:38,072 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (ID: 0)
+2025-09-19 19:29:38,072 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 1)
+2025-09-19 19:29:38,072 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 2)
+2025-09-19 19:29:38,072 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 3)
+2025-09-19 19:29:38,072 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (ID: 9)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 10)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 11)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 12)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 22)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 23)
+2025-09-19 19:29:38,073 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 24)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo i... (ID: 25)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (ID: 28)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (ID: 29)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 31)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.... (ID: 35)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (ID: 36)
+2025-09-19 19:29:38,074 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 39)
+2025-09-19 19:29:38,075 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:29:38,079 - src.main_window - INFO - Main window initialized
+2025-09-19 19:29:38,079 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:29:38,079 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:29:47,075 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:47,089 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:29:47,090 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:47,090 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:29:47,090 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:29:47,090 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:29:47,090 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:29:47,891 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:47,903 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:29:47,904 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:29:47,904 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:29:47,904 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:29:47,904 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:29:47,904 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:31:09,232 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:31:09,233 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:31:09,233 - root - INFO - Directory created/verified: config
+2025-09-19 19:31:09,233 - root - INFO - Directory created/verified: logs
+2025-09-19 19:31:09,234 - root - INFO - Directory created/verified: temp
+2025-09-19 19:31:09,269 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:31:09,269 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:31:09,269 - __main__ - INFO - Application controller initialized
+2025-09-19 19:31:09,270 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:31:09,272 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:31:09,274 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:31:09,287 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:31:09,288 - src.main_window - INFO - Selected microphone device: Default Device
+2025-09-19 19:31:09,288 - src.main_window - INFO - Found 40 audio devices total
+2025-09-19 19:31:09,288 - src.main_window - INFO - Added input device: Microsoft Sound Mapper - Input (ID: 0)
+2025-09-19 19:31:09,288 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 1)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 2)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 3)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Primary Sound Capture Driver (ID: 9)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 10)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 11)
+2025-09-19 19:31:09,289 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 12)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 22)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Stereo Mix (Realtek(R) Audio) (ID: 23)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 24)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Stereo Mix (Realtek HD Audio Stereo i... (ID: 25)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Line In (Realtek HD Audio Line input) (ID: 28)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Microphone (Realtek HD Audio Mic input) (ID: 29)
+2025-09-19 19:31:09,290 - src.main_window - INFO - Added input device: Microphone (Fantech Leviosa) (ID: 31)
+2025-09-19 19:31:09,291 - src.main_window - INFO - Added input device: Headset (@System32\drivers\bthhfenum.... (ID: 35)
+2025-09-19 19:31:09,291 - src.main_window - INFO - Added input device: Input (Steam Streaming Speakers Wave) (ID: 36)
+2025-09-19 19:31:09,291 - src.main_window - INFO - Added input device: Microphone (Fifine K420) (ID: 39)
+2025-09-19 19:31:09,291 - src.main_window - INFO - Added 18 input devices to dropdown
+2025-09-19 19:31:09,296 - src.main_window - INFO - Main window initialized
+2025-09-19 19:31:09,296 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:31:09,296 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:31:15,220 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:31:17,292 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:31:17,293 - src.main_window - INFO - Selected microphone device: Microphone (Fantech Leviosa)
+2025-09-19 19:31:18,772 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:31:18,775 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:31:18,776 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:31:18,776 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:31:18,776 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:31:18,776 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:31:18,780 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_193118.mp4
+2025-09-19 19:31:18,781 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:31:18,809 - src.audio_recorder - INFO - Audio recording started: recordings\pinpoint_capture_20250919_193118.wav
+2025-09-19 19:31:18,809 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:31:18,810 - src.main_window - INFO - Recording started
+2025-09-19 19:31:18,810 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_193118
+2025-09-19 19:31:20,383 - src.main_window - INFO - Click detected at (1476, 196) - Zoom triggered
+2025-09-19 19:31:21,650 - src.main_window - INFO - Click detected at (1434, 282) - Zoom triggered
+2025-09-19 19:31:22,944 - src.main_window - INFO - Click detected at (1593, 1063) - Zoom triggered
+2025-09-19 19:31:24,262 - src.main_window - INFO - Click detected at (942, 339) - Zoom triggered
+2025-09-19 19:31:24,379 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 4 clicks
+2025-09-19 19:31:24,407 - src.screen_capture - INFO - Screen capture stopped. Captured 137 frames in 5.63s (avg 24.3 FPS)
+2025-09-19 19:31:24,477 - src.video_processor - INFO - Video processing stopped. Processed 136 frames in 5.70s (avg 23.9 FPS)
+2025-09-19 19:31:24,538 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:31:24,997 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+
+2025-09-19 19:31:27,181 - py.warnings - WARNING - C:\Users\tanzir\AppData\Roaming\Python\Python313\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file recordings\pinpoint_capture_20250919_193118.mp4, 6220800 bytes wanted but 0 bytes read,at frame 136/137, at time 3.78/3.78 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-09-19 19:31:27,353 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:31:27,353 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:31:27,371 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:31:27,371 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_193118.mp4
+2025-09-19 19:31:28,611 - src.main_window - INFO - Recording stopped
+2025-09-19 19:32:05,078 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:32:05,091 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:32:05,092 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:32:05,092 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:32:05,092 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:32:05,093 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:32:05,093 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:32:37,228 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:32:37,228 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:32:37,228 - root - INFO - Directory created/verified: config
+2025-09-19 19:32:37,229 - root - INFO - Directory created/verified: logs
+2025-09-19 19:32:37,229 - root - INFO - Directory created/verified: temp
+2025-09-19 19:32:37,266 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:32:37,266 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:32:37,266 - __main__ - INFO - Application controller initialized
+2025-09-19 19:32:37,266 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:32:37,269 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:32:37,271 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:32:37,285 - src.main_window - INFO - Main window initialized
+2025-09-19 19:32:37,285 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:32:37,285 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:32:38,812 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:32:38,835 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:32:39,844 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:32:39,882 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:32:39,882 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:32:39,882 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:32:39,882 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:32:39,882 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:32:39,886 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_193239.mp4
+2025-09-19 19:32:39,887 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:32:39,889 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:32:39,889 - src.main_window - INFO - Recording started
+2025-09-19 19:32:39,890 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_193239
+2025-09-19 19:32:41,359 - src.main_window - INFO - Click detected at (1410, 253) - Zoom triggered
+2025-09-19 19:32:41,371 - src.video_processor - INFO - Zoom effect started at (1410, 253), level: 1.85
+2025-09-19 19:32:42,999 - src.main_window - INFO - Click detected at (1795, 14) - Zoom triggered
+2025-09-19 19:32:44,035 - src.main_window - INFO - Click detected at (1615, 1067) - Zoom triggered
+2025-09-19 19:32:44,713 - src.main_window - INFO - Click detected at (1617, 1059) - Zoom triggered
+2025-09-19 19:32:45,714 - src.main_window - INFO - Click detected at (919, 343) - Zoom triggered
+2025-09-19 19:32:45,810 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 5 clicks
+2025-09-19 19:32:45,813 - src.screen_capture - INFO - Screen capture stopped. Captured 143 frames in 5.93s (avg 24.1 FPS)
+2025-09-19 19:32:45,883 - src.video_processor - INFO - Video processing stopped. Processed 142 frames in 6.00s (avg 23.7 FPS)
+2025-09-19 19:32:45,883 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:32:45,883 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:32:45,900 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:32:45,901 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_193239.mp4
+2025-09-19 19:32:47,197 - src.main_window - INFO - Recording stopped
+2025-09-19 19:33:03,598 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:33:03,610 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:33:03,611 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:33:03,611 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:33:03,611 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:33:03,611 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:33:03,612 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:39:09,167 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:39:09,167 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:39:09,167 - root - INFO - Directory created/verified: config
+2025-09-19 19:39:09,168 - root - INFO - Directory created/verified: logs
+2025-09-19 19:39:09,168 - root - INFO - Directory created/verified: temp
+2025-09-19 19:39:09,203 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:39:09,203 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:39:09,204 - __main__ - INFO - Application controller initialized
+2025-09-19 19:39:09,204 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:39:09,207 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:39:09,208 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:39:09,227 - src.main_window - INFO - Main window initialized
+2025-09-19 19:39:09,227 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:39:09,228 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:39:12,477 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:12,501 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:13,309 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:14,589 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:20,935 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:20,935 - src.main_window - INFO - Microphone device changed to: Microphone (Fantech Leviosa) (1 ch)
+2025-09-19 19:39:20,997 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:25,063 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:25,110 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:39:25,110 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:25,111 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:39:25,111 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:39:25,111 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:39:25,112 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:39:34,316 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:39:34,317 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:39:34,317 - root - INFO - Directory created/verified: config
+2025-09-19 19:39:34,318 - root - INFO - Directory created/verified: logs
+2025-09-19 19:39:34,318 - root - INFO - Directory created/verified: temp
+2025-09-19 19:39:34,349 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:39:34,350 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:39:34,350 - __main__ - INFO - Application controller initialized
+2025-09-19 19:39:34,350 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:39:34,353 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:39:34,354 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:39:34,368 - src.main_window - INFO - Main window initialized
+2025-09-19 19:39:34,369 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:39:34,369 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:39:47,823 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:47,824 - src.main_window - INFO - Microphone recording enabled
+2025-09-19 19:39:49,647 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:39:49,650 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:39:49,650 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:39:49,650 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:39:49,650 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:39:49,651 - src.audio_recorder - INFO - Audio device set to: Microphone (Fantech Leviosa)
+2025-09-19 19:39:49,651 - src.main_window - INFO - Audio recorder initialized
+2025-09-19 19:39:49,651 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:39:49,655 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_193949.mp4
+2025-09-19 19:39:49,655 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:39:49,657 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:39:49,657 - src.audio_recorder - INFO - Audio recording started
+2025-09-19 19:39:49,658 - src.main_window - INFO - Audio recording started
+2025-09-19 19:39:49,658 - src.main_window - INFO - Recording started
+2025-09-19 19:39:49,658 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_193949
+2025-09-19 19:39:51,219 - src.video_processor - INFO - Zoom effect started at (1257, 239), level: 1.85
+2025-09-19 19:39:51,297 - src.main_window - INFO - Click detected at (1257, 239) - Zoom triggered
+2025-09-19 19:39:51,838 - src.main_window - INFO - Click detected at (1372, 245) - Zoom triggered
+2025-09-19 19:39:52,054 - src.main_window - INFO - Click detected at (1372, 245) - Zoom triggered
+2025-09-19 19:39:53,128 - src.main_window - INFO - Click detected at (1795, 13) - Zoom triggered
+2025-09-19 19:39:54,440 - src.main_window - INFO - Click detected at (1628, 1069) - Zoom triggered
+2025-09-19 19:39:55,462 - src.main_window - INFO - Click detected at (1085, 338) - Zoom triggered
+2025-09-19 19:39:55,546 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 6 clicks
+2025-09-19 19:39:55,568 - src.screen_capture - INFO - Screen capture stopped. Captured 142 frames in 5.91s (avg 24.0 FPS)
+2025-09-19 19:39:55,686 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:39:55,689 - src.audio_recorder - INFO - Audio saved to: session_20250919_193949.wav
+2025-09-19 19:39:55,689 - src.main_window - INFO - Audio saved: session_20250919_193949.wav
+2025-09-19 19:39:55,739 - src.video_processor - INFO - Video processing stopped. Processed 141 frames in 6.08s (avg 23.2 FPS)
+2025-09-19 19:39:55,739 - src.main_window - INFO - Audio and video files created separately
+2025-09-19 19:39:55,740 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:39:55,740 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:39:55,758 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:39:55,759 - src.audio_recorder - INFO - Audio recorder cleaned up
+2025-09-19 19:39:55,759 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_193949.mp4
+2025-09-19 19:39:56,880 - src.main_window - INFO - Recording stopped
+2025-09-19 19:41:04,618 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:41:04,630 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:41:04,631 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:41:04,631 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:41:04,631 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:41:04,631 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:41:04,632 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:42:03,042 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:42:03,042 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:42:03,042 - root - INFO - Directory created/verified: config
+2025-09-19 19:42:03,043 - root - INFO - Directory created/verified: logs
+2025-09-19 19:42:03,043 - root - INFO - Directory created/verified: temp
+2025-09-19 19:42:03,078 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:42:03,078 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:42:03,078 - __main__ - INFO - Application controller initialized
+2025-09-19 19:42:03,078 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:42:03,081 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:42:03,083 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:42:03,102 - src.main_window - INFO - Main window initialized
+2025-09-19 19:42:03,102 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:42:03,102 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:42:07,067 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:42:07,070 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:42:07,070 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:42:07,070 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:42:07,070 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:42:07,070 - src.audio_recorder - INFO - Audio device set to: Microphone (Fantech Leviosa)
+2025-09-19 19:42:07,070 - src.main_window - INFO - Audio recorder initialized
+2025-09-19 19:42:07,070 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:42:07,075 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_194207.mp4
+2025-09-19 19:42:07,076 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:42:07,077 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:42:07,078 - src.audio_recorder - INFO - Audio recording started
+2025-09-19 19:42:07,078 - src.main_window - INFO - Audio recording started
+2025-09-19 19:42:07,079 - src.main_window - INFO - Recording started
+2025-09-19 19:42:07,079 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_194207
+2025-09-19 19:42:10,714 - src.video_processor - INFO - Zoom effect started at (1171, 239), level: 1.85
+2025-09-19 19:42:10,760 - src.main_window - INFO - Click detected at (1171, 239) - Zoom triggered
+2025-09-19 19:42:11,711 - src.main_window - INFO - Click detected at (1469, 188) - Zoom triggered
+2025-09-19 19:42:12,432 - src.main_window - INFO - Click detected at (1091, 478) - Zoom triggered
+2025-09-19 19:42:13,311 - src.main_window - INFO - Click detected at (1598, 1065) - Zoom triggered
+2025-09-19 19:42:14,360 - src.main_window - INFO - Click detected at (1072, 347) - Zoom triggered
+2025-09-19 19:42:14,464 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 5 clicks
+2025-09-19 19:42:14,505 - src.screen_capture - INFO - Screen capture stopped. Captured 177 frames in 7.43s (avg 23.8 FPS)
+2025-09-19 19:42:14,602 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:42:14,604 - src.audio_recorder - INFO - Audio saved to: session_20250919_194207.wav
+2025-09-19 19:42:14,605 - src.main_window - INFO - Audio saved: session_20250919_194207.wav
+2025-09-19 19:42:14,633 - src.video_processor - INFO - Video processing stopped. Processed 175 frames in 7.56s (avg 23.2 FPS)
+2025-09-19 19:42:15,170 - src.main_window - INFO - Successfully combined audio and video: recordings\pinpoint_capture_20250919_194207_with_audio.mp4
+2025-09-19 19:42:15,170 - src.main_window - INFO - Audio and video combined: recordings\pinpoint_capture_20250919_194207_with_audio.mp4
+2025-09-19 19:42:15,171 - src.main_window - INFO - Temporary files cleaned up
+2025-09-19 19:42:15,171 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:42:15,172 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:42:15,189 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:42:15,190 - src.audio_recorder - INFO - Audio recorder cleaned up
+2025-09-19 19:42:15,190 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_194207_with_audio.mp4
+2025-09-19 19:42:16,315 - src.main_window - INFO - Recording stopped
+2025-09-19 19:44:04,216 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:44:04,217 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:44:04,217 - root - INFO - Directory created/verified: config
+2025-09-19 19:44:04,217 - root - INFO - Directory created/verified: logs
+2025-09-19 19:44:04,218 - root - INFO - Directory created/verified: temp
+2025-09-19 19:44:04,249 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:44:04,249 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:44:04,249 - __main__ - INFO - Application controller initialized
+2025-09-19 19:44:04,249 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:44:04,252 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:44:04,253 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:44:04,269 - src.main_window - INFO - Main window initialized
+2025-09-19 19:44:04,269 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:44:04,269 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:44:09,519 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:44:09,536 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:44:09,539 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:44:09,541 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:44:09,541 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:44:09,543 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:44:09,544 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:44:26,059 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:44:26,060 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:44:26,060 - root - INFO - Directory created/verified: config
+2025-09-19 19:44:26,061 - root - INFO - Directory created/verified: logs
+2025-09-19 19:44:26,061 - root - INFO - Directory created/verified: temp
+2025-09-19 19:44:26,093 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:44:26,093 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:44:26,093 - __main__ - INFO - Application controller initialized
+2025-09-19 19:44:26,093 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:44:26,097 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:44:26,098 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:44:26,113 - src.main_window - INFO - Main window initialized
+2025-09-19 19:44:26,114 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:44:26,114 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:44:34,592 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:44:34,608 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:44:34,609 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:44:34,609 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:44:34,609 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:44:34,610 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:44:34,610 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:45:25,153 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:45:25,153 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:45:25,154 - root - INFO - Directory created/verified: config
+2025-09-19 19:45:25,154 - root - INFO - Directory created/verified: logs
+2025-09-19 19:45:25,154 - root - INFO - Directory created/verified: temp
+2025-09-19 19:45:25,185 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:45:25,185 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:45:25,186 - __main__ - INFO - Application controller initialized
+2025-09-19 19:45:25,186 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:45:25,189 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:45:25,190 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:45:25,205 - src.main_window - INFO - Main window initialized
+2025-09-19 19:45:25,205 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:45:25,206 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:46:40,198 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:46:40,198 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:46:40,199 - root - INFO - Directory created/verified: config
+2025-09-19 19:46:40,199 - root - INFO - Directory created/verified: logs
+2025-09-19 19:46:40,199 - root - INFO - Directory created/verified: temp
+2025-09-19 19:46:40,231 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:46:40,231 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:46:40,231 - __main__ - INFO - Application controller initialized
+2025-09-19 19:46:40,231 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:46:40,234 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:46:40,236 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:46:40,251 - src.main_window - INFO - Main window initialized
+2025-09-19 19:46:40,251 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:46:40,251 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:47:23,922 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:47:23,986 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:47:30,268 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:47:30,280 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:47:30,281 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:47:30,281 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:47:30,281 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:47:30,281 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:47:30,281 - src.app_controller - INFO - Initiating application shutdown
+2025-09-19 19:49:15,991 - __main__ - INFO - Pinpoint Capture starting up
+2025-09-19 19:49:15,992 - root - INFO - Directory created/verified: recordings
+2025-09-19 19:49:15,992 - root - INFO - Directory created/verified: config
+2025-09-19 19:49:15,992 - root - INFO - Directory created/verified: logs
+2025-09-19 19:49:15,993 - root - INFO - Directory created/verified: temp
+2025-09-19 19:49:16,042 - src.app_controller - INFO - Logging system initialized
+2025-09-19 19:49:16,042 - src.app_controller - INFO - Application controller initialized
+2025-09-19 19:49:16,043 - __main__ - INFO - Application controller initialized
+2025-09-19 19:49:16,043 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-09-19 19:49:16,047 - src.app_controller - INFO - System requirements check passed
+2025-09-19 19:49:16,048 - src.config_manager - INFO - Settings loaded successfully
+2025-09-19 19:49:16,071 - src.main_window - INFO - Main window initialized
+2025-09-19 19:49:16,071 - src.app_controller - INFO - Application initialization completed successfully
+2025-09-19 19:49:16,071 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-09-19 19:49:19,991 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:49:19,993 - src.screen_capture - INFO - Custom cursor loaded successfully from SVG
+2025-09-19 19:49:19,994 - src.screen_capture - INFO - Screen capture initialized with 2 monitors and cursor capture enabled
+2025-09-19 19:49:19,994 - src.mouse_handler - INFO - Mouse event handler initialized with Windows API
+2025-09-19 19:49:19,994 - src.video_processor - INFO - Video processor initialized
+2025-09-19 19:49:19,994 - src.audio_recorder - INFO - Audio device set to: Microphone (Fantech Leviosa)
+2025-09-19 19:49:19,994 - src.main_window - INFO - Audio recorder initialized
+2025-09-19 19:49:19,994 - src.main_window - INFO - Recording components initialized
+2025-09-19 19:49:19,999 - src.video_processor - INFO - Video processing started, output: recordings\pinpoint_capture_20250919_194919.mp4
+2025-09-19 19:49:19,999 - src.screen_capture - INFO - Screen capture started on monitor 1
+2025-09-19 19:49:20,001 - src.mouse_handler - INFO - Mouse monitoring started (polling-based)
+2025-09-19 19:49:20,001 - src.audio_recorder - INFO - Audio recording started
+2025-09-19 19:49:20,001 - src.main_window - INFO - Audio recording started
+2025-09-19 19:49:20,002 - src.main_window - INFO - Recording started
+2025-09-19 19:49:20,003 - src.main_window - INFO - Recording started: pinpoint_capture_20250919_194919
+2025-09-19 19:49:24,193 - src.video_processor - INFO - Zoom effect started at (1804, 23), level: 1.79
+2025-09-19 19:49:24,237 - src.main_window - INFO - Click detected at (1804, 23) - Zoom triggered
+2025-09-19 19:49:26,093 - src.main_window - INFO - Click detected at (1485, 185) - Zoom triggered
+2025-09-19 19:49:27,614 - src.main_window - INFO - Click detected at (995, 192) - Zoom triggered
+2025-09-19 19:49:28,407 - src.main_window - INFO - Click detected at (1005, 280) - Zoom triggered
+2025-09-19 19:49:28,513 - src.mouse_handler - INFO - Mouse monitoring stopped. Captured 4 clicks
+2025-09-19 19:49:28,525 - src.screen_capture - INFO - Screen capture stopped. Captured 201 frames in 8.53s (avg 23.6 FPS)
+2025-09-19 19:49:28,628 - src.audio_recorder - INFO - Audio recording stopped
+2025-09-19 19:49:28,631 - src.audio_recorder - INFO - Audio saved to: session_20250919_194919.wav
+2025-09-19 19:49:28,632 - src.main_window - INFO - Audio saved: session_20250919_194919.wav
+2025-09-19 19:49:28,683 - src.video_processor - INFO - Video processing stopped. Processed 200 frames in 8.68s (avg 23.0 FPS)
+2025-09-19 19:49:28,836 - src.main_window - INFO - Successfully combined audio and video: recordings\pinpoint_capture_20250919_194919_with_audio.mp4
+2025-09-19 19:49:28,837 - src.main_window - INFO - Audio and video combined: recordings\pinpoint_capture_20250919_194919_with_audio.mp4
+2025-09-19 19:49:28,838 - src.main_window - INFO - Temporary files cleaned up
+2025-09-19 19:49:28,838 - src.video_processor - INFO - Video processor cleanup completed
+2025-09-19 19:49:28,839 - src.screen_capture - INFO - Screen capture cleanup completed
+2025-09-19 19:49:28,857 - src.mouse_handler - INFO - Mouse handler cleanup completed
+2025-09-19 19:49:28,858 - src.audio_recorder - INFO - Audio recorder cleaned up
+2025-09-19 19:49:28,858 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_194919_with_audio.mp4
+2025-09-19 19:49:30,392 - src.main_window - INFO - Recording stopped
+2025-09-19 19:50:42,041 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:50:42,052 - src.app_controller - INFO - Application quit event received
+2025-09-19 19:50:42,053 - src.config_manager - INFO - Settings saved successfully
+2025-09-19 19:50:42,053 - src.app_controller - INFO - Application cleanup completed
+2025-09-19 19:50:42,053 - src.app_controller - INFO - Application exited with code: 0
+2025-09-19 19:50:42,053 - __main__ - INFO - Application finished with result: 0
+2025-09-19 19:50:42,053 - src.app_controller - INFO - Initiating application shutdown

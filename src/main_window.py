@@ -3,6 +3,7 @@
 import sys
 import os
 import time
+import subprocess
 from pathlib import Path
 from typing import Optional
 import logging
@@ -26,6 +27,8 @@ from .config_manager import ConfigManager
 from .screen_capture import ScreenCapture
 from .mouse_handler import MouseEventHandler
 from .video_processor import VideoProcessor
+from .audio_recorder import AudioRecorder
+from string import Template
 
 
 class RecordingController(QThread):
@@ -47,6 +50,7 @@ class RecordingController(QThread):
         self.screen_capture: Optional[ScreenCapture] = None
         self.mouse_handler: Optional[MouseEventHandler] = None
         self.video_processor: Optional[VideoProcessor] = None
+        self.audio_recorder: Optional[AudioRecorder] = None
         
         # State
         self.is_recording = False
@@ -68,6 +72,13 @@ class RecordingController(QThread):
             
             # Initialize video processor
             self.video_processor = VideoProcessor(self.settings)
+            
+            # Initialize audio recorder if microphone recording is enabled
+            if self.settings.record_mic:
+                self.audio_recorder = AudioRecorder()
+                if self.settings.mic_device_id is not None:
+                    self.audio_recorder.set_device(self.settings.mic_device_id)
+                self.logger.info("Audio recorder initialized")
             
             self.logger.info("Recording components initialized")
             return True
@@ -108,6 +119,13 @@ class RecordingController(QThread):
             
             self.mouse_handler.start_monitoring()
             
+            # Start audio recording if enabled
+            if self.settings.record_mic and self.audio_recorder:
+                if not self.audio_recorder.start_recording():
+                    self.logger.warning("Failed to start audio recording, continuing without audio")
+                else:
+                    self.logger.info("Audio recording started")
+            
             self.is_recording = True
             self.frame_count = 0
             self.recording_started.emit()
@@ -134,6 +152,22 @@ class RecordingController(QThread):
             if self.screen_capture:
                 self.screen_capture.stop_capture()
             
+            # Stop audio recording and save audio file if enabled
+            audio_file_path = None
+            if self.settings.record_mic and self.audio_recorder:
+                self.audio_recorder.stop_recording()
+                
+                # Save temporary audio file
+                if self.session:
+                    base_path = Path(self.session.session_id)
+                    audio_file_path = str(base_path.with_suffix('.wav'))
+                    
+                    if self.audio_recorder.save_audio(audio_file_path):
+                        self.logger.info(f"Audio saved: {audio_file_path}")
+                    else:
+                        self.logger.warning("Failed to save audio file")
+                        audio_file_path = None
+            
             if self.video_processor:
                 self.video_processor.stop_processing()
             
@@ -141,7 +175,26 @@ class RecordingController(QThread):
             output_path = ""
             if self.session and self.video_processor:
                 stats = self.video_processor.get_processing_stats()
-                output_path = stats.get('output_path', '')
+                video_path = stats.get('output_path', '')
+                
+                # Combine audio and video if both exist
+                if audio_file_path and video_path and Path(audio_file_path).exists() and Path(video_path).exists():
+                    output_path = self._combine_audio_video(video_path, audio_file_path)
+                    if output_path:
+                        self.logger.info(f"Audio and video combined: {output_path}")
+                        # Clean up temporary files
+                        try:
+                            Path(audio_file_path).unlink()
+                            Path(video_path).unlink()
+                            self.logger.info("Temporary files cleaned up")
+                        except Exception as e:
+                            self.logger.warning(f"Failed to clean up temporary files: {e}")
+                    else:
+                        output_path = video_path
+                        self.logger.warning("Failed to combine audio and video, keeping video only")
+                else:
+                    output_path = video_path
+                    
                 # End the recording session
                 self.session.end_time = time.time()
                 self.session.status = 'completed'
@@ -170,6 +223,10 @@ class RecordingController(QThread):
             if self.mouse_handler:
                 self.mouse_handler.cleanup()
                 self.mouse_handler = None
+            
+            if self.audio_recorder:
+                self.audio_recorder.cleanup()
+                self.audio_recorder = None
                 
         except Exception as e:
             self.logger.error(f"Error cleaning up components: {e}")
@@ -212,8 +269,47 @@ class RecordingController(QThread):
         self.settings = settings
         if self.video_processor:
             self.video_processor.update_settings(settings)
-        if self.mouse_handler:
-            self.mouse_handler.update_settings(settings)
+    
+    def _combine_audio_video(self, video_path: str, audio_path: str) -> Optional[str]:
+        """Combine audio and video files using FFmpeg."""
+        try:
+            video_file = Path(video_path)
+            audio_file = Path(audio_path)
+            
+            # Create output filename with combined suffix
+            output_file = video_file.with_name(f"{video_file.stem}_with_audio{video_file.suffix}")
+            
+            # FFmpeg command to combine audio and video
+            cmd = [
+                'ffmpeg',
+                '-i', str(video_file),  # Video input
+                '-i', str(audio_file),  # Audio input
+                '-c:v', 'copy',         # Copy video codec (no re-encoding)
+                '-c:a', 'aac',          # Encode audio to AAC
+                '-strict', 'experimental',
+                '-y',                   # Overwrite output file
+                str(output_file)
+            ]
+            
+            # Run FFmpeg command
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+            
+            if result.returncode == 0:
+                self.logger.info(f"Successfully combined audio and video: {output_file}")
+                return str(output_file)
+            else:
+                self.logger.error(f"FFmpeg failed: {result.stderr}")
+                return None
+                
+        except subprocess.TimeoutExpired:
+            self.logger.error("FFmpeg command timed out")
+            return None
+        except FileNotFoundError:
+            self.logger.error("FFmpeg not found. Please install FFmpeg to combine audio and video.")
+            return None
+        except Exception as e:
+             self.logger.error(f"Error combining audio and video: {e}")
+             return None
 
 
 class MainWindow(QMainWindow):
@@ -249,9 +345,9 @@ class MainWindow(QMainWindow):
     def setup_ui(self):
         """Set up the user interface."""
         self.setWindowTitle("Pinpoint Capture")
-        # Increase base size to avoid control overlap
-        self.setMinimumSize(520, 540)
-        self.resize(640, 580)
+        # Compact window size for narrower interface
+        self.setMinimumSize(480, 620)
+        self.resize(520, 680)
         
         # Central widget
         central_widget = QWidget()
@@ -259,8 +355,8 @@ class MainWindow(QMainWindow):
         
         # Main layout (compact, single column)
         main_layout = QVBoxLayout(central_widget)
-        main_layout.setContentsMargins(12, 12, 12, 12)
-        main_layout.setSpacing(10)
+        main_layout.setContentsMargins(8, 8, 8, 8)
+        main_layout.setSpacing(8)
         # Prevent child cropping by honoring minimum sizes
         main_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
@@ -355,6 +451,40 @@ class MainWindow(QMainWindow):
         # Always add the progress bar but keep it hidden to reserve space
         group_layout.addWidget(self.progress_bar)
         
+        # Audio controls section
+        audio_separator = QFrame()
+        audio_separator.setFrameShape(QFrame.Shape.HLine)
+        audio_separator.setFrameShadow(QFrame.Shadow.Sunken)
+        group_layout.addWidget(audio_separator)
+        
+        audio_layout = QGridLayout()
+        audio_layout.setVerticalSpacing(6)
+        audio_layout.setColumnStretch(1, 1)
+        
+        # Record microphone checkbox
+        self.record_mic_checkbox = QCheckBox("Record Microphone")
+        self.record_mic_checkbox.setChecked(self.settings.record_mic)
+        self.record_mic_checkbox.stateChanged.connect(self.on_record_mic_changed)
+        audio_layout.addWidget(self.record_mic_checkbox, 0, 0, 1, 2)
+        
+        # Microphone device selection
+        mic_device_label = QLabel("Microphone:")
+        mic_device_label.setMinimumHeight(24)
+        mic_device_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        audio_layout.addWidget(mic_device_label, 1, 0)
+        
+        self.mic_device_combo = QComboBox()
+        self.mic_device_combo.setMinimumHeight(24)
+        self.mic_device_combo.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        self.populate_audio_devices()
+        self.mic_device_combo.currentIndexChanged.connect(self.on_mic_device_changed)
+        # Make the device combo behave better in narrow layouts
+        self.mic_device_combo.setMinimumContentsLength(12)
+        self.mic_device_combo.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToMinimumContentsLengthWithIcon)
+        audio_layout.addWidget(self.mic_device_combo, 1, 1)
+        
+        group_layout.addLayout(audio_layout)
+        
         layout.addWidget(group)
     
     def setup_settings_panel(self, layout):
@@ -391,6 +521,9 @@ class MainWindow(QMainWindow):
         self.duration_spin.setValue(int(self.settings.zoom_duration * 1000))
         self.duration_spin.setSuffix(" ms")
         self.duration_spin.valueChanged.connect(self.on_duration_changed)
+        # Set arrow button symbols
+        self.duration_spin.setButtonSymbols(QSpinBox.ButtonSymbols.UpDownArrows)
+        self.duration_spin.setMaximumWidth(100)
         group_layout.addWidget(self.duration_spin, 1, 1, 1, 2)
         
         # Transition speed
@@ -399,6 +532,7 @@ class MainWindow(QMainWindow):
         self.speed_slider.setRange(1, 10)
         self.speed_slider.setValue(int(self.settings.transition_speed))
         self.speed_slider.valueChanged.connect(self.on_speed_changed)
+        self.speed_slider.setMinimumHeight(22)
         group_layout.addWidget(self.speed_slider, 2, 1)
         
         self.speed_label = QLabel(f"{self.settings.transition_speed:.1f}")
@@ -416,7 +550,7 @@ class MainWindow(QMainWindow):
         group.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         # Ensure the line edit expands and the browse button remains visible
         group_layout.setColumnStretch(1, 1)
-        group_layout.setColumnMinimumWidth(2, 96)
+        group_layout.setColumnMinimumWidth(2, 76)
         group_layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         
         # Output format
@@ -429,6 +563,7 @@ class MainWindow(QMainWindow):
         self.format_combo.setCurrentText(self.settings.output_format)
         self.format_combo.currentTextChanged.connect(self.on_format_changed)
         self.format_combo.setMinimumHeight(28)
+        self.format_combo.setMaximumWidth(100)
         self.format_combo.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.format_combo, 0, 1)
         
@@ -442,7 +577,10 @@ class MainWindow(QMainWindow):
         self.fps_spin.setValue(self.settings.fps)
         self.fps_spin.valueChanged.connect(self.on_fps_changed)
         self.fps_spin.setMinimumHeight(28)
+        self.fps_spin.setMaximumWidth(80)
         self.fps_spin.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        # Set arrow button symbols
+        self.fps_spin.setButtonSymbols(QSpinBox.ButtonSymbols.UpDownArrows)
         group_layout.addWidget(self.fps_spin, 1, 1)
         
         # Output directory
@@ -453,14 +591,14 @@ class MainWindow(QMainWindow):
         self.output_path_edit = QLineEdit(self.settings.output_path)
         self.output_path_edit.textChanged.connect(self.on_output_path_changed)
         self.output_path_edit.setMinimumHeight(28)
-        self.output_path_edit.setMinimumWidth(220)
+        self.output_path_edit.setMinimumWidth(160)
         self.output_path_edit.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(self.output_path_edit, 2, 1)
         
         browse_button = QPushButton("Browse")
         browse_button.clicked.connect(self.browse_output_directory)
         browse_button.setMinimumHeight(32)
-        browse_button.setMinimumWidth(90)
+        browse_button.setMinimumWidth(70)
         browse_button.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         group_layout.addWidget(browse_button, 2, 2)
         
@@ -510,8 +648,12 @@ class MainWindow(QMainWindow):
     
     def setup_styles(self):
         """Set up application styles."""
-        # Set modern color scheme with readable text
-        self.setStyleSheet("""
+        # Build absolute icon paths for spinbox arrows (use forward slashes for Qt)
+        project_root = Path(__file__).resolve().parents[1]
+        up_icon_path = (project_root / 'icons' / 'chevron-up.svg').as_posix()
+        down_icon_path = (project_root / 'icons' / 'chevron-down.svg').as_posix()
+    
+        style_template = Template("""
             QMainWindow {
                 background-color: #f5f5f5;
             }
@@ -560,9 +702,64 @@ class MainWindow(QMainWindow):
                 border-radius: 4px;
                 padding: 2px 6px;
             }
-            QStatusBar {
-                background-color: #eeeeee;
+            /* Ensure QComboBox dropdown list is readable */
+            QComboBox {
+                padding-right: 24px; /* space for arrow */
+            }
+            QComboBox QAbstractItemView {
+                background-color: #ffffff;
                 color: #222222;
+                border: 1px solid #cccccc;
+                selection-background-color: #4CAF50;
+                selection-color: #ffffff;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left: 1px solid #cccccc;
+                background: #f8f8f8;
+            }
+            QComboBox::drop-down:hover {
+                background: #e8e8e8;
+            }
+            QComboBox::down-arrow {
+                image: url('$down_icon_path');
+                width: 12px;
+                height: 12px;
+            }
+            QComboBox::down-arrow:disabled {
+                image: url('$down_icon_path');
+            }
+            /* Ensure QMessageBox details and buttons are readable */
+            QMessageBox QTextEdit {
+                background-color: #ffffff;
+                color: #222222;
+                border: 1px solid #cccccc;
+            }
+            QMessageBox QPushButton {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            QMessageBox QPushButton:hover {
+                background-color: #45a049;
+            }
+            QMessageBox QPushButton:pressed {
+                background-color: #3d8b40;
+            }
+            QMessageBox QToolButton {
+                background-color: #f8f8f8;
+                color: #222222;
+                border: 1px solid #cccccc;
+                border-radius: 3px;
+                padding: 2px 6px;
+            }
+            QMessageBox QToolButton:hover {
+                background-color: #e8e8e8;
             }
             QMessageBox {
                 background-color: #ffffff;
@@ -595,7 +792,61 @@ class MainWindow(QMainWindow):
                 margin: -2px 0;
                 border-radius: 3px;
             }
+            QSpinBox::up-button {
+                subcontrol-origin: border;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: #cccccc;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                background: #f8f8f8;
+            }
+            QSpinBox::up-button:hover {
+                background: #e8e8e8;
+            }
+            QSpinBox::up-button:pressed {
+                background: #d8d8d8;
+            }
+            /* Explicit arrow icons to ensure visibility when using QSS */
+            QSpinBox::up-arrow {
+                image: url('$up_icon_path');
+                width: 12px;
+                height: 12px;
+            }
+            QSpinBox::up-arrow:disabled {
+                image: url('$up_icon_path');
+            }
+            QSpinBox::down-button {
+                subcontrol-origin: border;
+                subcontrol-position: bottom right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: #cccccc;
+                border-left-style: solid;
+                border-bottom-right-radius: 3px;
+                background: #f8f8f8;
+            }
+            QSpinBox::down-button:hover {
+                background: #e8e8e8;
+            }
+            QSpinBox::down-button:pressed {
+                background: #d8d8d8;
+            }
+            QSpinBox::down-arrow {
+                image: url('$down_icon_path');
+                width: 12px;
+                height: 12px;
+            }
+            QSpinBox::down-arrow:disabled {
+                image: url('$down_icon_path');
+            }
         """)
+
+        self.setStyleSheet(style_template.substitute(
+            up_icon_path=up_icon_path,
+            down_icon_path=down_icon_path,
+        ))
     
     def setup_recording_signals(self):
         """Connect recording controller signals."""
@@ -657,27 +908,33 @@ class MainWindow(QMainWindow):
         """Handle zoom level change."""
         self.settings.zoom_level = value / 100.0
         self.update_zoom_label()
+        self.config_manager.save_settings(self.settings)
     
     def on_duration_changed(self, value):
         """Handle zoom duration change."""
         self.settings.zoom_duration = value / 1000.0
+        self.config_manager.save_settings(self.settings)
     
     def on_speed_changed(self, value):
         """Handle transition speed change."""
         self.settings.transition_speed = value
         self.update_speed_label()
+        self.config_manager.save_settings(self.settings)
     
     def on_format_changed(self, format_name):
         """Handle output format change."""
         self.settings.output_format = format_name
+        self.config_manager.save_settings(self.settings)
     
     def on_fps_changed(self, fps):
         """Handle FPS change."""
         self.settings.fps = fps
+        self.config_manager.save_settings(self.settings)
     
     def on_output_path_changed(self, path):
         """Handle output path change."""
         self.settings.output_path = path
+        self.config_manager.save_settings(self.settings)
     
     def browse_output_directory(self):
         """Browse for output directory."""
@@ -791,6 +1048,56 @@ class MainWindow(QMainWindow):
             
             time_str = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
             self.duration_label.setText(time_str)
+    
+    def populate_audio_devices(self):
+        """Populate the microphone device dropdown."""
+        self.mic_device_combo.clear()
+        
+        try:
+            devices = AudioRecorder.get_audio_devices()
+            
+            if not devices:
+                self.mic_device_combo.addItem("No audio devices found", None)
+                self.mic_device_combo.setEnabled(False)
+                return
+            
+            # Add default device option
+            default_id = AudioRecorder.get_default_device_id()
+            self.mic_device_combo.addItem("Default Device", default_id)
+            
+            # Add all available devices
+            for device in devices:
+                device_name = f"{device['name']} ({device['channels']} ch)"
+                self.mic_device_combo.addItem(device_name, device['id'])
+            
+            # Set current selection based on settings
+            if self.settings.mic_device_id is not None:
+                for i in range(self.mic_device_combo.count()):
+                    if self.mic_device_combo.itemData(i) == self.settings.mic_device_id:
+                        self.mic_device_combo.setCurrentIndex(i)
+                        break
+            
+            self.mic_device_combo.setEnabled(True)
+            
+        except Exception as e:
+            self.log_message(f"Error loading audio devices: {e}")
+            self.mic_device_combo.addItem("Error loading devices", None)
+            self.mic_device_combo.setEnabled(False)
+    
+    def on_record_mic_changed(self, state):
+        """Handle record microphone checkbox change."""
+        self.settings.record_mic = state == Qt.CheckState.Checked.value
+        self.config_manager.save_settings(self.settings)
+        self.log_message(f"Microphone recording {'enabled' if self.settings.record_mic else 'disabled'}")
+    
+    def on_mic_device_changed(self, index):
+        """Handle microphone device selection change."""
+        device_id = self.mic_device_combo.itemData(index)
+        self.settings.mic_device_id = device_id
+        self.config_manager.save_settings(self.settings)
+        
+        device_name = self.mic_device_combo.currentText()
+        self.log_message(f"Microphone device changed to: {device_name}")
     
     def log_message(self, message):
         """Display message in status bar (logs panel removed)."""

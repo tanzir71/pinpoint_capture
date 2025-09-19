@@ -39,6 +39,8 @@ class RecordingSettings:
     auto_save: bool = True
     compression_quality: int = 85  # 0-100
     click_detection_sensitivity: float = 0.5  # 0.1-1.0
+    record_mic: bool = False  # Enable microphone recording
+    mic_device_id: Optional[int] = None  # Microphone device ID
     
     def to_dict(self) -> dict:
         """Convert settings to dictionary for JSON serialization."""
@@ -52,7 +54,9 @@ class RecordingSettings:
             'output_path': self.output_path,
             'auto_save': self.auto_save,
             'compression_quality': self.compression_quality,
-            'click_detection_sensitivity': self.click_detection_sensitivity
+            'click_detection_sensitivity': self.click_detection_sensitivity,
+            'record_mic': self.record_mic,
+            'mic_device_id': self.mic_device_id
         }
     
     @classmethod
@@ -68,7 +72,9 @@ class RecordingSettings:
             output_path=data.get('output_path', './recordings'),
             auto_save=data.get('auto_save', True),
             compression_quality=data.get('compression_quality', 85),
-            click_detection_sensitivity=data.get('click_detection_sensitivity', 0.5)
+            click_detection_sensitivity=data.get('click_detection_sensitivity', 0.5),
+            record_mic=data.get('record_mic', False),
+            mic_device_id=data.get('mic_device_id', None)
         )
 
 

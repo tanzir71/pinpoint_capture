@@ -3,13 +3,15 @@
         1920,
         1080
     ],
-    "fps": 30,
-    "zoom_level": 2.0,
-    "zoom_duration": 2.992,
-    "transition_speed": 1,
+    "fps": 36,
+    "zoom_level": 1.79,
+    "zoom_duration": 3.0,
+    "transition_speed": 4,
     "output_format": "mp4",
     "output_path": "./recordings",
     "auto_save": true,
     "compression_quality": 85,
-    "click_detection_sensitivity": 0.5
+    "click_detection_sensitivity": 0.5,
+    "record_mic": true,
+    "mic_device_id": 10
 }
