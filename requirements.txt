@@ -1,0 +1,25 @@
+# Pinpoint Capture - Screen Recorder with Smart Zoom
+# Python Dependencies
+
+# GUI Framework
+PyQt6>=6.6.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Screen Capture
+mss>=9.0.0
+
+# Mouse and Keyboard Event Handling
+pynput>=1.7.0
+
+# Video Processing (optional for advanced features)
+moviepy>=1.0.0
+
+# System and Utilities
+psutil>=5.9.0
+
+# Data Handling
+dataclasses-json>=0.6.0

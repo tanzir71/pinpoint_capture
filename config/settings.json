@@ -1,0 +1,15 @@
+{
+    "resolution": [
+        1920,
+        1080
+    ],
+    "fps": 30,
+    "zoom_level": 2.0,
+    "zoom_duration": 3.0,
+    "transition_speed": 1,
+    "output_format": "mp4",
+    "output_path": "./recordings",
+    "auto_save": true,
+    "compression_quality": 85,
+    "click_detection_sensitivity": 0.5
+}
