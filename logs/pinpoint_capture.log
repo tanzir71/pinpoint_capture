@@ -6955,3 +6955,24 @@ TypeError: '_thread._ThreadHandle' object is not callable
 2025-09-19 20:06:01,726 - src.audio_recorder - INFO - Audio recorder cleaned up
 2025-09-19 20:06:01,727 - src.main_window - INFO - Recording saved to: recordings\pinpoint_capture_20250919_200554_with_audio.mp4
 2025-09-19 20:06:02,907 - src.main_window - INFO - Recording stopped
+2025-10-21 22:52:12,580 - __main__ - INFO - Pinpoint Capture starting up
+2025-10-21 22:52:12,580 - root - INFO - Directory created/verified: recordings
+2025-10-21 22:52:12,581 - root - INFO - Directory created/verified: config
+2025-10-21 22:52:12,581 - root - INFO - Directory created/verified: logs
+2025-10-21 22:52:12,581 - root - INFO - Directory created/verified: temp
+2025-10-21 22:52:12,615 - src.app_controller - INFO - Logging system initialized
+2025-10-21 22:52:12,616 - src.app_controller - INFO - Application controller initialized
+2025-10-21 22:52:12,616 - __main__ - INFO - Application controller initialized
+2025-10-21 22:52:12,616 - src.app_controller - INFO - Initializing Pinpoint Capture application
+2025-10-21 22:52:12,619 - src.app_controller - INFO - System requirements check passed
+2025-10-21 22:52:12,621 - src.config_manager - INFO - Settings loaded successfully
+2025-10-21 22:52:12,637 - src.main_window - INFO - Main window initialized
+2025-10-21 22:52:12,638 - src.app_controller - INFO - Application initialization completed successfully
+2025-10-21 22:52:12,638 - src.app_controller - INFO - Starting Pinpoint Capture application
+2025-10-21 22:52:42,547 - src.config_manager - INFO - Settings saved successfully
+2025-10-21 22:52:42,561 - src.app_controller - INFO - Application quit event received
+2025-10-21 22:52:42,562 - src.config_manager - INFO - Settings saved successfully
+2025-10-21 22:52:42,562 - src.app_controller - INFO - Application cleanup completed
+2025-10-21 22:52:42,562 - src.app_controller - INFO - Application exited with code: 0
+2025-10-21 22:52:42,563 - __main__ - INFO - Application finished with result: 0
+2025-10-21 22:52:42,563 - src.app_controller - INFO - Initiating application shutdown
